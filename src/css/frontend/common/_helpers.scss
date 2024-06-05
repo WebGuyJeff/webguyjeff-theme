@@ -1,0 +1,13 @@
+// Until Gut' enables shadow support in the UI (maybe WP 6.5...).
+.has-shadow-small { box-shadow: var(--wp--preset--shadow--theme); }
+.has-shadow-soft { box-shadow: var(--wp--preset--shadow--theme-soft); }
+.has-shadow-inset { box-shadow: var(--wp--preset--shadow--theme-inset); }
+.has-overflow-hidden { overflow: hidden; }
+.has-border-radius-large { border-radius: var(--wp--custom--border-radius--large); }
+.has-border-radius-medium { border-radius: var(--wp--custom--border-radius--medium); }
+.has-border-radius-small { border-radius: var(--wp--custom--border-radius--small ); }
+.has-gutter-medium { gap: var(--wp--custom--gutter--medium) !important;}
+.hide-below-1000 { @media screen and (max-width: 1000px) { display: none !important; } }
+.hide-above-1000 { @media screen and (min-width: 1000.001px) { display: none !important; } }
+.has-responsive-h2 { h2 { @media screen and (max-width: 600px) { font-size: var(--wp--preset--font-size--xxx-large) !important; } } }
+.has-square-aspect-ratio { aspect-ratio: 1/1; }

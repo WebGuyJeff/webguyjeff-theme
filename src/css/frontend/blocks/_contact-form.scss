@@ -1,0 +1,6 @@
+// Put contact form at the top on mobile.
+.contactBlocks {
+	@media (max-width: 781px ) {
+		flex-flow: column-reverse;
+	}
+}

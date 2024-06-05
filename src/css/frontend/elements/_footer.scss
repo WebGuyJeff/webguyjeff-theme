@@ -1,0 +1,41 @@
+footer.wp-block-template-part {
+
+	// Center align on mobile.
+	@media (max-width: 781px) {
+
+		text-align: center;
+
+		.wp-block-columns {
+			row-gap: var(--wp--preset--spacing--60);
+			max-width: var(--wp--style--global--content-size);
+			margin: 0 auto;
+		}
+
+		.has-text-align-left,
+		.wp-block-site-logo {
+			text-align: center;
+		}
+		.is-layout-flex,
+		ul.wp-block-navigation__container.wp-block-navigation {
+			justify-content: center;
+			align-items: center;
+		}
+		.wp-block-navigation.is-vertical {
+			--navigation-layout-align: center;
+		}
+		.is-content-justification-space-between {
+			justify-content: center;
+		}
+	}
+}
+
+.communityFooterTopper {
+	position: relative;
+
+	.communityFooterTopper_wave {
+		position: absolute;
+		bottom: 0;	
+		left: 0;
+		right: 0;
+	}
+}

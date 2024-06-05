@@ -1,0 +1,39 @@
+
+.teamCard {
+	position: relative;
+
+	&_shape {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: 100% 50%;
+		z-index: -1;
+		transition: transform var(--wp--custom--transition--hover-time) ease-in-out;
+
+		&-orange {
+			transform-origin: 0% 100%;
+		}
+		&-green {
+			transform-origin: 100% 100%;
+		}
+		&-red {
+			transform-origin: center;
+		}
+	}
+
+	&:hover {
+		.teamCard_shape {
+			&-orange {
+				transform: translateY(-3rem) rotate(-5deg);
+			}
+			&-green {
+				transform: translateY(-3rem) rotate(5deg);
+			}
+			&-red {
+				transform: translateY(-4.5rem);
+			}
+		}
+	}
+}

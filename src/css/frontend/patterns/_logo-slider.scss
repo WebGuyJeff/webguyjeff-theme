@@ -1,0 +1,99 @@
+/**
+ * This worlks by having the child elements of the animated contain duplicated, so when you jump
+ * from -50% back to 0%, it looks like it went all the way round without a break.
+ * This also get's around complications of different width children etc.
+ */
+
+/*
+Expects structure:
+
+<div class="logoSlider">
+	<div>
+		<img />
+		<img />
+		<img />
+		...
+	</div>
+</div>
+*/
+
+@mixin white-fade-overlay {
+	&:before,
+	&:after {
+		background: linear-gradient( to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100% );
+		content: "";
+		height: 100%;
+		position: absolute;
+		width: 10%;
+		z-index: 2;
+	}
+
+	&:after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&:before {
+		left: 0;
+		top: 0;
+	}
+}
+
+.logoSlider {
+	display: flex;
+	align-items: center;
+	width: 70rem;
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 5rem;
+
+	@include white-fade-overlay;
+
+	// Inner child container (the animated one)
+	& > * {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		overflow: hidden;
+		width: 200%;
+
+		animation: scroll 5s linear infinite;
+		
+		border: solid 2px;
+
+		// Logo containers x2  (duplicated).
+		&>* {
+
+			display: flex;
+			gap: 2rem;
+
+			border: solid 1px blue;
+		
+			// Logos.
+			>* {
+				width: max-content !important;
+				height: 50px !important;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				
+				img {
+					object-fit: contain !important;
+				}
+			}
+		}
+	}
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

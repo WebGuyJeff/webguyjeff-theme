@@ -1,0 +1,27 @@
+.wp-block-post-terms {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.taxonomy-category {
+
+		a {
+			padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--50);
+			margin: var(--wp--preset--spacing--20);
+			background-color: var(--wp--preset--color--bur-bg-alt);
+			border-radius: var(--wp--custom--border-radius--large);
+		}
+
+		.wp-block-post-terms__separator {
+			display: none;
+		}
+	}
+
+
+	&.has-text-align-center {
+		justify-content: center;
+	}
+
+	&.has-text-align-right {
+		justify-content: flex-end;
+	}
+}

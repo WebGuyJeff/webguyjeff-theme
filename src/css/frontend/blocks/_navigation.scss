@@ -1,0 +1,153 @@
+
+
+// Header nav root.
+.mainNav {
+
+	// Mobile/fullscreen menu toggle buttons.
+	.wp-block-navigation__responsive-container-close,
+	.wp-block-navigation__responsive-container-open {
+
+		svg {
+			pointer-events: auto !important;
+			width: 3rem;
+			height: 3rem;
+		}
+	}
+
+
+	/*------------------------------------------------------------------------------- Desktop ----*/
+
+	.wp-block-navigation__responsive-container:not( .is-menu-open ) {
+
+		// Menu dropdown.
+		.has-child .wp-block-navigation-submenu__toggle~.wp-block-navigation__submenu-container {
+			border-radius: 0 0 var(--wp--custom--border-radius--medium) var(--wp--custom--border-radius--medium);
+			overflow: hidden !important;
+		}
+
+		.wp-block-navigation-item {
+
+			// Define underline colours.
+			&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--bur-accent); }
+			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--bur-yellow); }
+			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--bur-green-lightest); }
+			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--bur-green-light); }
+			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--bur-green-dark); }
+
+			// Underline colours (exclude sub-menu items).
+			&:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {
+
+				a.wp-block-navigation-item__content {
+					padding-bottom: 0.5rem;
+				}
+
+				&:after {
+					content: "";
+					display: block;
+					height: 0.5rem;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+				
+					background-image: 
+					linear-gradient(to right, var(--menuColour), var(--menuColour)),
+					linear-gradient(to right, var(--wp--preset--color--bur-fg-alt), var(--wp--preset--color--bur-fg-alt));
+					background-position: 100% 100%, 0 100%;
+					background-repeat: no-repeat;
+					background-size: 100%, 0;
+					transition: height var(--wp--custom--transition--hover-time) ease-in, background-size var(--wp--custom--transition--hover-time) ease-in;
+					pointer-events: none;
+				}
+
+				&:hover:after {
+					height: 0.7rem;
+					background-size: 0, 100%;
+				}
+
+				a {
+					text-decoration: none !important;
+					color: inherit;
+				}
+
+			}
+
+
+			// Dropdown item hover effect.
+			.wp-block-navigation__submenu-container {
+				border-top: none !important;
+				li {
+
+					a {
+						white-space: nowrap;
+						font-weight: 600;
+						color: #333;
+						transition: background-color var(--wp--custom--transition--hover-time) ease-in, color var(--wp--custom--transition--hover-time) ease-in;
+					}
+
+					&:hover a {
+						background-color: var(--menuColour) !important;
+						color: var(--wp--preset--color--bur-fg-alt) !important;
+					}
+				}
+			}
+		}
+	}
+
+
+	/*---------------------------------------------------------------- Mobile/fullscreen Open ----*/
+
+	// Make all wrappers full height.
+	.wp-block-navigation__responsive-container.is-menu-open {
+		.wp-block-navigation__responsive-close,
+		.wp-block-navigation__responsive-container-content,
+		.wp-block-navigation__responsive-dialog {
+			height: 100%;
+		}
+	}
+
+	.wp-block-navigation__responsive-container.is-menu-open {
+		z-index: 10;
+		gap: var(--wp--preset--spacing--50);
+		background: var(--wp--preset--color--bur-bg-alt) !important;
+		color: var(--wp--preset--color--bur-fg-alt) !important;
+
+		height: 100%;
+	
+		.wp-block-navigation__responsive-container-close {
+			margin-top: var(--wp--preset--spacing--50);
+			margin-right: var(--wp--preset--spacing--50)	
+		}
+
+		.wp-block-navigation {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}	
+
+		.wp-block-navigation__responsive-container-content {
+			padding-top: 2rem !important;
+			padding-bottom: 2rem !important;
+
+			// Submenu border-left.
+			.has-child .wp-block-navigation__submenu-container {
+				border-left: solid 0.3rem #fff !important;
+				padding-top: 0rem !important;
+				padding-left: 1rem !important;
+			}
+
+			// Item alignment.
+			.wp-block-navigation-item,
+			.wp-block-navigation__container,
+			.wp-block-page-list,
+			.has-child .wp-block-navigation__submenu-container {
+				--navigation-layout-justification-setting: flex-start !important;
+				align-items: flex-start !important;
+				gap: 1.5rem;
+			}
+
+			// Vertically align center.
+			.wp-block-navigation__container {
+				justify-content: center !important;
+
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"freedev","className":"jsSlideHeader"} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","right":"0","left":"0"},"blockGap":"0"}},"backgroundColor":"freedev-bg-alt"} -->
+<div class="wp-block-group has-freedev-bg-alt-background-color has-background" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
+
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"inherit":true}} -->
+    <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);">
+        <!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
+    </div>
+    <!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"main"} -->
+<main class="wp-block-group">
+
+    <!-- wp:query {"queryId":4,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"inherit":true}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+
+        <!-- wp:group {"layout":{"inherit":true}} -->
+        <div class="wp-block-group">
+            <!-- wp:post-title {"textAlign":"center","isLink":true,"fontSize":"x-large"} /-->
+
+            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"fontSize":"small"} -->
+            <div class="wp-block-group has-small-font-size">
+                <!-- wp:post-terms {"term":"category"} /-->
+
+                <!-- wp:post-date /-->
+            </div>
+            <!-- /wp:group -->
+
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
+        <div style="height:var:preset|spacing|60" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+
+        <!-- /wp:post-template -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group">
+            <!-- wp:query-pagination {"textColor":"freedev-fg","layout":{"type":"flex","justifyContent":"space-between"}} -->
+            <!-- wp:query-pagination-previous /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when the query returns no results.","backgroundColor":"freedev-bg-alt"} -->
+        <p class="has-text-align-center has-freedev-bg-alt-background-color has-background">Unfortunately no posts were found</p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+
+    </div>
+    <!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","theme":"freedev","tagName":"footer","align":"full"} /-->

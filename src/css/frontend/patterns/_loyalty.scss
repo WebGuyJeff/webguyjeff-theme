@@ -1,0 +1,36 @@
+.loyalty {
+
+	margin-block-start: 10rem !important;
+
+	@media (min-width: 400px) {
+		margin-block-start: 13rem !important;
+	}
+
+	@media (min-width: 700px) {
+		margin-block-start: 16rem !important;
+	}
+
+	@media (min-width: 782px) {
+		margin-block-start: var(--wp--custom--gutter--large) !important;
+	}
+
+	&_loveBadge {
+		margin-block-start: -40% !important;
+		text-align: center;
+
+		img {
+			max-width: 24rem;
+			max-height: 21rem;
+		}
+	}
+
+	&_image {
+		height: 100%;
+
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+
+}

@@ -1,0 +1,59 @@
+
+.page-template-page-with-hero {
+	figure.alignfull.wp-block-post-featured-image {
+		z-index: -1;
+	}
+}
+
+.page-hero-overlap {
+	margin-block-start: -8rem !important;
+	min-height: 9rem !important;
+	z-index: 1;
+	position: relative;
+	box-shadow: var(--wp--preset--shadow--theme-soft-up);
+
+	&.has-global-padding {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}
+
+// Single template.
+.single-service .wp-block-post-featured-image {
+
+	z-index:-1;
+	height: 40vh !important;
+
+	a {
+		height: inherit !important;
+	}
+
+	img {
+		height: 100% !important;
+		object-fit: cover;
+	}
+
+	@media (min-width: 500px) {
+		height: 50vh !important;
+	}
+
+	@media (min-width: 768px) {
+		height: 60vh !important;
+	}
+
+	@media (min-width: 1200px) {
+		height: 70vh !important;
+	}
+
+/*
+	//These begin to push the title belo pagefold.
+
+	@media (min-width: 1500px) {
+		height: 80vh !important;
+	}
+
+	@media (min-width: 1800px) {
+		height: 90vh !important;
+	}
+*/
+}

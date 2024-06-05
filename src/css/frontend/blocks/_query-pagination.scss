@@ -1,0 +1,6 @@
+.wp-block-query-pagination-numbers {
+
+	.page-numbers:not(:last-child) {
+		margin-right: var(--wp--preset--spacing--40);
+	}
+}

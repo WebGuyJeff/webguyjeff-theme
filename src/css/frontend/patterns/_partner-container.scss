@@ -1,0 +1,44 @@
+// Used for inbound and outbound partner templates.
+
+.partner-container {
+
+	--offset: 10rem;
+	margin-top: var(--offset) !important;
+
+	&--inner-top {
+		position: relative;
+		z-index: 1;
+	}
+
+	// Only for inbound partner template.
+	&--logo {
+
+		@media (max-width: 781.999px) {
+
+			max-width: 15rem !important;
+		}
+	}
+
+	&--inner-bottom {
+		padding-top: var(--offset) !important;
+
+		@media (min-width: 782px) {
+			padding-top: 0 !important;
+			padding-bottom: calc( 0.25 * var(--offset) ) !important;
+		}
+	}
+
+	&--copy {
+		margin-bottom: calc( -1 * var(--offset) ) !important;
+		
+	}
+
+	&--image {
+
+		margin-top: calc( -1 * var(--offset) ) !important;
+
+		img {
+			box-shadow: var(--wp--preset--shadow--theme-soft);
+		}
+	}
+}

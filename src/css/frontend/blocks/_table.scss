@@ -1,0 +1,20 @@
+.wp-block-table {
+
+	&.is-style-stripes tbody tr:nth-child(odd) {
+		background-color: var(--wp--preset--color--bur-bg-alt);
+	}
+
+	thead {
+		border-bottom: var(--wp--custom--border-size) solid;
+	}
+
+	tfoot {
+		border-top: var(--wp--custom--border-size) solid;
+	}
+
+	figcaption {
+		font-size: var(--wp--preset--font-size--small);
+		color: var(--wp--preset--color--bur-fg);
+		opacity: 0.6;
+	}
+}

@@ -1,0 +1,39 @@
+a:not(.wp-block-button__link, header *) {
+
+	--custom-underline-thickness: 0.11em;
+
+	text-decoration: none !important;
+	color: inherit;
+
+	background-image: 
+		linear-gradient(to right, currentColor, currentColor),
+		linear-gradient(to right, var(--wp--preset--color--bur-accent), var(--wp--preset--color--bur-accent));
+	transition: background-size var(--wp--custom--transition--hover-time);
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% var(--custom-underline-thickness), 0 var(--custom-underline-thickness);
+
+	&:hover {
+		background-size: 0 var(--custom-underline-thickness), 100% var(--custom-underline-thickness);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+nav,
+.wp-block-site-title {
+	a:not(.wp-block-button__link, header *) {
+		background-image: 
+			linear-gradient(to right, #0000, #0000),
+			linear-gradient(to right, var(--wp--preset--color--bur-accent), var(--wp--preset--color--bur-accent));
+	}
+}
+
+.wp-block-button__link {
+	transition: border-radius var(--wp--custom--transition--hover-time) ease-in-out, box-shadow var(--wp--custom--transition--hover-time) ease-in-out;
+}

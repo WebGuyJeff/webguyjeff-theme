@@ -1,0 +1,39 @@
+
+@mixin textGradient {
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+}
+
+.bur__textGradient_yellow-red {
+	@include textGradient;
+	background-color: #fe6150;
+	background-image: linear-gradient(170deg, #ffb129 0%, #fe6150 100%);
+}
+
+.bur__textGradient_blue-red {
+	@include textGradient;
+	background-color: #044171;
+	background-image: linear-gradient(170deg, #044171 0%, #fe6150 100%);
+}
+
+.bur__textGradient_blue-green {
+	@include textGradient;
+	background-color: #044171;
+	background-image: linear-gradient(170deg, #044171 0%, #0d9066 100%);
+}
+
+.bur__textGradient_mint-yellow {
+	@include textGradient;
+	background-color: #044171;
+	background-image: linear-gradient(170deg, #7ee2a2 0%, #ffb129 100%);
+}
+
+.has-display-small-font-size {
+	@media (max-width: 450px) { font-size: var(--wp--preset--font-size--xxx-large) !important; }
+	@media (max-width: 320px) { font-size: var(--wp--preset--font-size--xx-large) !important; }
+}

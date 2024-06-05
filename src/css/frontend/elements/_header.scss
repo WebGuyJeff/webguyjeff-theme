@@ -1,0 +1,108 @@
+.jsSlideHeader {
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	transition: all var(--wp--custom--transition--hover-time) ease-in;
+	z-index: 10;
+	width: 100% !important;
+	min-height: 8rem; // Match inner .jsSlideHeader_grid to prevent layout shift on squish.
+	pointer-events: none;
+
+	.logoContainer {
+
+		position: relative;
+		height: 7rem;
+		min-width: 7rem;
+		transition: height var(--wp--custom--transition--hover-time);
+
+		.logo-large,
+		.logo-small {
+			position: absolute;
+			height: 100%;
+			transition: opacity var(--wp--custom--transition--hover-time);
+
+			img {
+				object-position: left;
+				object-fit: contain;
+				height: 100% !important;
+			}
+		}
+
+		.logo-large { opacity: 1; }
+		.logo-small { opacity: 0; }
+	}
+
+	&.is-squished {
+
+		.logoContainer {
+			height: 3rem;
+			min-width: 3rem;
+
+			.logo-large { opacity: 0; }
+			.logo-small { opacity: 1; }
+		}
+
+		.jsSlideHeader_grid {
+			min-height: 4rem !important;
+		}
+	}
+
+	.wp-block-navigation-is-layout-flex {
+		row-gap: var(--wp--preset--spacing--20) !important;
+	}
+
+	&>.wp-block-group {
+		padding: 0;
+	}
+
+	// Header inner-container.
+	.jsSlideHeader_grid {
+		gap: 1rem !important;
+		display: grid !important;
+		grid-template-columns: 0px 6rem 1fr 0px 0px !important;
+		min-height: 8rem;
+		pointer-events: auto;
+		transition: all var(--wp--custom--transition--hover-time) ease-in;
+
+		// Nav column.
+		&>*:nth-child(3) {
+			justify-content: flex-end;
+		}
+
+		// Button column.
+		&>*:nth-child(4) {
+			display: none;
+		}
+
+		// Social column.
+		&>*:nth-child(5) {
+			display: none;
+		}
+
+		@media (min-width: 35rem) {
+			grid-template-columns: 1fr 6rem minmax(0px, 44rem) 0px 1fr !important;
+		}
+
+		@media (min-width: 70rem) {
+			grid-template-columns: 1fr minmax(0px, 10rem) minmax(0px, 50rem) minmax(0px, 10rem) 1fr !important;
+
+			// Nav column.
+			&>*:nth-child(3) {
+				justify-content: center;
+			}
+
+			// Button column.
+			&>*:nth-child(4) {
+				display: flex;
+			}
+		}
+
+		@media (min-width:90rem) {
+			// Social column.
+			&>*:nth-child(5) {
+				display: flex;
+			}
+		}
+	}
+}

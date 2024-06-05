@@ -1,0 +1,18 @@
+.wp-block-categories {
+
+	&.is-style-raft-pills {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		list-style: none;
+		font-size: var(--wp--preset--font-size--small);
+		padding-left: 0;
+
+		li {
+			margin: 5px;
+			background-color: var(--wp--preset--color--bur-bg-alt);
+			border-radius: var(--wp--custom--border-radius--medium);
+			padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
+		}
+	}
+}
