@@ -6,6 +6,6 @@
  */
 :root {
 	// 15px @ 400px <=> 18px @ 1920px ( no upper or lower limit ).
-	--bur--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
-	font-size: var( --bur--fluid-root );
+	--fdev--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
+	font-size: var( --fdev--fluid-root );
 }

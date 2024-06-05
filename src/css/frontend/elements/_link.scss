@@ -7,7 +7,7 @@ a:not(.wp-block-button__link, header *) {
 
 	background-image: 
 		linear-gradient(to right, currentColor, currentColor),
-		linear-gradient(to right, var(--wp--preset--color--bur-accent), var(--wp--preset--color--bur-accent));
+		linear-gradient(to right, var(--wp--preset--color--fdev-accent), var(--wp--preset--color--fdev-accent));
 	transition: background-size var(--wp--custom--transition--hover-time);
 	background-position: 100% 100%, 0 100%;
 	background-repeat: no-repeat;
@@ -30,7 +30,7 @@ nav,
 	a:not(.wp-block-button__link, header *) {
 		background-image: 
 			linear-gradient(to right, #0000, #0000),
-			linear-gradient(to right, var(--wp--preset--color--bur-accent), var(--wp--preset--color--bur-accent));
+			linear-gradient(to right, var(--wp--preset--color--fdev-accent), var(--wp--preset--color--fdev-accent));
 	}
 }
 

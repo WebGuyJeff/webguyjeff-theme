@@ -1,7 +1,7 @@
 %input-base {
 	border-radius: var(--wp--custom--border-radius--large);
-	color: var(--wp--preset--color--bur-fg);
-	background-color: var(--wp--preset--color--bur-bg);
+	color: var(--wp--preset--color--fdev-fg);
+	background-color: var(--wp--preset--color--fdev-bg);
 	border: none;
 	cursor: pointer;
 
@@ -34,8 +34,8 @@
 
 %button {
 	@include button-base;
-	color: var(--wp--preset--color--bur-fg-alt);
-	background: var(--wp--preset--color--bur-accent);
+	color: var(--wp--preset--color--fdev-fg-alt);
+	background: var(--wp--preset--color--fdev-accent);
 	padding-top: calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) );
 	padding-right: calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) );
 	padding-bottom: calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) );
