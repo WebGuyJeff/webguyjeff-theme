@@ -48,9 +48,7 @@ class Theme_Setup {
 	public function register_front_end_scripts_and_styles() {
 		if ( $GLOBALS['pagenow'] !== 'wp-login.php' ) {
 			wp_enqueue_style( 'freedev_css', FREEDEV_URL . 'build/css/freedev.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev.css' ), 'all' );
-			wp_register_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '3.12.2', true );
-			wp_register_script( 'gsap_scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js', array( 'gsap' ), '3.12.2', true );
-			wp_enqueue_script( 'freedev_js', FREEDEV_URL . 'build/js/freedev.js', array( 'gsap', 'gsap_scrolltrigger' ), filemtime( FREEDEV_PATH . 'build/js/freedev.js' ), true );
+			wp_enqueue_script( 'freedev_js', FREEDEV_URL . 'build/js/freedev.js', array(), filemtime( FREEDEV_PATH . 'build/js/freedev.js' ), true );
 		}
 		if ( current_user_can( 'manage_options' ) && FREEDEV_DEBUG ) {
 			wp_enqueue_style( 'freedev_dev_css', FREEDEV_URL . 'build/css/freedev-dev.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev-dev.css' ), 'all' );

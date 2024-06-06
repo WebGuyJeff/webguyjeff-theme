@@ -3,6 +3,7 @@ namespace BigupWeb\Freedev;
 
 /**
  * OLD HOME FOR REFERENCE PURPOSES ONLY
+ *
  * @package freedev
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
@@ -10,7 +11,10 @@ namespace BigupWeb\Freedev;
 
 wp_deregister_style( 'freedev_css' );
 wp_deregister_script( 'freedev_js' );
+
 wp_enqueue_style( 'old_css', FREEDEV_URL . 'build/old/old-css.css', array(), filemtime( FREEDEV_PATH . 'build/old/old-css.css' ), 'all' );
+wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '3.12.2', true );
+wp_enqueue_script( 'gsap_scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js', array( 'gsap' ), '3.12.2', true );
 wp_enqueue_script( 'old_js', FREEDEV_URL . 'build/old/old-js.js', array( 'gsap', 'gsap_scrolltrigger' ), filemtime( FREEDEV_PATH . 'build/old/old-js.js' ), true );
 ?>
 

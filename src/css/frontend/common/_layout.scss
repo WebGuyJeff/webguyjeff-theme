@@ -12,24 +12,6 @@ footer {
 	margin-block-start: 0 !important;
 }
 
-
-/*
-// Set a consistent block gap on root 'section' blocks.
-body > .is-root-container,
-body > .is-root-container > main,
-.wp-site-blocks,
-.wp-site-blocks > main {
-
-	// Flex/grid gap doesn't work as it creates gap between header and hero.
-
-	// Global 'root-level' block margin.
-	&>*:not( header, header + *, main ) {
-		margin-block-start: var(--wp--custom--gutter--large);
-		margin-block-end: 0;
-	}
-}
-*/
-
 // Main should be purely semantic.
 main {
 	margin-block-start: 0 !important;
