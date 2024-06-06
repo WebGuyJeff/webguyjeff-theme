@@ -10,8 +10,8 @@ const { getWebpackEntryPoints } = require( '@wordpress/scripts/utils/config' )
 module.exports = {
 	...wordpressConfig,
 	entry: {
-		// Everything outputs to build/.
-		...getWebpackEntryPoints(),
+		// @wordpress/scripts helper which generates entry points from any '**/block.json' in 'src'.
+		...wordpressConfig.entry(),
 		// 'example/output': './path/to/dir/entrypoint.js',
 		'css/freedev': path.join( __dirname, '/src/css/freedev.scss' ),
 		'css/freedev-admin': path.join( __dirname, '/src/css/freedev-admin.scss' ),
