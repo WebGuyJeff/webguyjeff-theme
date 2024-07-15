@@ -30,56 +30,6 @@ wp_enqueue_script( 'old_js', FREEDEV_URL . 'build/old/old-js.js', array( 'gsap',
 	style="color: #333; background:#fff;"
 >
 
-	<header 
-		class="pageGrid jsSlideHeader"
-		style="transform: translate( 0, -100% );
-				position: fixed;"
-		hidden="true"
-	>
-		<div class="pageGrid_inner">
-			<div class="header_content header_content-left">
-				<a class="siteTitle" href="<?php echo get_bloginfo( 'wpurl' ); ?>" aria-label="Home">
-					<?php
-					if ( has_custom_logo() ) {
-						$logo_id  = get_theme_mod( 'custom_logo' );
-						$logo_src = wp_get_attachment_image_src( $logo_id, 'full' );
-						echo '<img class="siteTitle_logo" src="' . esc_url( $logo_src[0] ) . '">';
-					}
-					?>
-					<div class="siteTitle_text">
-						<p class="siteTitle_sitename">
-							<?php echo get_bloginfo( 'name' ); ?>
-						</p>
-						<span class="siteTitle_tagline">
-							<?php echo get_bloginfo( 'description' ); ?>
-						</span>
-					</div>
-				</a>
-			</div>
-			<div class="header_content header_content-right">
-				<?php
-				Menu_Walker::output_theme_location_menu(
-					array(
-						'theme_location'    => 'landing-page-primary-menu',
-						'menu_class'        => 'mainMenu',
-						'nav_or_div'        => 'nav',
-						'nav_aria_label'    => 'Menu',
-						'html_tab_indents'  => 3,
-						'top_level_classes' => 'button button-noback',
-					)
-				);
-				?>
-			</div>
-		</div>
-	</header>
-
-	<button aria-label="Main Menu" title="Main Menu" type="button" class="menuToggle">
-		<?php
-			$burger = Util::get_contents( FREEDEV_PATH . 'assets/svg/icons/burger.svg' );
-			Escape::svg( $burger );
-		?>
-	</button>
-
 	<main>
 
 		<section class="heroPunch">

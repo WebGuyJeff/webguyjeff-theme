@@ -3,8 +3,6 @@
 	"version": "0.2.0",
 	"description": "A theme for freelance developers.",
 	"dependencies": {
-		"@wordpress/block-editor": "^13.0.0",
-		"@wordpress/blocks": "^13.0.0",
 		"@wordpress/i18n": "^5.0.0",
 		"gsap": "^3.12.5",
 		"prop-types": "^15.8.1"
