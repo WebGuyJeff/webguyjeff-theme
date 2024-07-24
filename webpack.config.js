@@ -14,9 +14,6 @@ module.exports = {
 		'css/freedev-editor': path.join( __dirname, '/src/css/freedev-editor.scss' ),
 		'css/freedev-dev': path.join( __dirname, '/src/css/freedev-dev.scss' ),
 		'js/freedev': path.join( __dirname, '/src/js/freedev' ),
-		// Legacy support for old page until migration to blocks is complete.
-		'old/old-css': path.join( __dirname, '/src/old/old.scss' ),
-		'old/old-js': path.join( __dirname, '/src/old/old' ),
 	},
 	plugins: [
 		...wordpressConfig.plugins,
