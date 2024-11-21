@@ -5,7 +5,6 @@
  * @see https://websemantics.uk/tools/responsive-font-calculator/
  */
 :root {
-	// 15px @ 400px <=> 18px @ 1920px ( no upper or lower limit ).
 	--fdev--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
 	font-size: var( --fdev--fluid-root );
 }
