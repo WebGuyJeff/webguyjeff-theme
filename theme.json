@@ -57,15 +57,15 @@
                 }
 			],
 			"palette": [
-				{ "slug": "fdev-bg","color":"#fcfcfc","name":"Theme Background"},
-				{ "slug": "fdev-fg","color":"#181818","name":"Theme Foreground"},
-				{ "slug": "fdev-bg-alt","color":"#044171","name":"Theme Background Alt"},
-				{ "slug": "fdev-fg-alt","color":"#fff","name":"Theme Foreground Alt"},
-				{ "slug": "fdev-accent","color":"#fe6150","name":"Theme Accent"},
-				{ "slug": "fdev-green-light","color":"#0d9066","name":"Theme Green Light"},
-				{ "slug": "fdev-green-lightest","color":"#7ee2a2","name":"Theme Green Lightest"},
-				{ "slug": "fdev-green-dark","color":"#04724f","name":"Theme Green Dark"},
-				{ "slug": "fdev-yellow","color":"#ffb129","name":"Theme Yellow"},
+				{ "slug": "wgj-bg","color":"#f8f801","name":"Theme Background"},
+				{ "slug": "wgj-fg","color":"#000","name":"Theme Foreground"},
+				{ "slug": "wgj-bg-alt","color":"#000","name":"Theme Background Alt"},
+				{ "slug": "wgj-fg-alt","color":"#fff","name":"Theme Foreground Alt"},
+				{ "slug": "wgj-accent","color":"#fe6150","name":"Theme Accent"},
+				{ "slug": "wgj-green-light","color":"#0d9066","name":"Theme Green Light"},
+				{ "slug": "wgj-green-lightest","color":"#7ee2a2","name":"Theme Green Lightest"},
+				{ "slug": "wgj-green-dark","color":"#04724f","name":"Theme Green Dark"},
+				{ "slug": "wgj-yellow","color":"#ffb129","name":"Theme Yellow"},
 				{ "slug": "pink-lightest", "color": "hsl(303, 53%, 88%)", "name": "Pink Lightest" },
 				{ "slug": "pink-light", "color": "hsl(303, 53%, 60%)", "name": "Pink Light" },
 				{ "slug": "pink", "color": "hsl(303, 53%, 50%)", "name": "Pink" },
@@ -224,8 +224,8 @@
 		"dimensions": { "minHeight": true },
 		"position": { "sticky": true },
 		"custom": {
-			"body-class": "fdev-theme-default",
-			"fluid-root": "var(--fdev--fluid-root)",
+			"body-class": "wgj-theme-default",
+			"fluid-root": "var(--wgj--fluid-root)",
 			"gutter": {
 				"small": "var( --wp--preset--spacing--40 )",
 				"medium": "clamp( var( --wp--preset--spacing--50 ), 4vw, var( --wp--preset--spacing--60 ) )",
@@ -253,8 +253,8 @@
 	},
 	"styles": {
 		"color": {
-			"background": "var(--wp--preset--color--fdev-bg)",
-			"text": "var(--wp--preset--color--fdev-fg)"
+			"background": "var(--wp--preset--color--wgj-bg)",
+			"text": "var(--wp--preset--color--wgj-fg)"
 		},
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--medium)",
@@ -306,7 +306,7 @@
 						"right": "calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) )"
 					}
 				},
-				"color": { "background": "var(--wp--preset--color--fdev-accent)", "text": "var(--wp--preset--color--fdev-fg-alt)" },
+				"color": { "background": "var(--wp--preset--color--wgj-accent)", "text": "var(--wp--preset--color--wgj-fg-alt)" },
 				"variations": {
 					"outline": {
 						"color": { "background": "#0000", "text": "currentColor" },
@@ -325,7 +325,7 @@
 			"core/comment-author-name": { "typography": { "fontSize": "var(--wp--preset--font-size--medium)" } },
 			"core/comment-content": {
 				"border": { "radius": "var(--wp--custom--border-radius--small)" },
-				"color": { "background": "var(--wp--preset--color--fdev-bg-alt)" },
+				"color": { "background": "var(--wp--preset--color--wgj-bg-alt)" },
 				"spacing": {
 					"padding": {
 						"top": "var(--wp--preset--spacing--30)",
@@ -352,7 +352,7 @@
 				"elements": {
 					"link": {
 						"typography": { "fontSize": "var(--wp--preset--font-size--small)" },
-						"color": { "text": "var(--wp--preset--color--fdev-accent)" }
+						"color": { "text": "var(--wp--preset--color--wgj-accent)" }
 					}
 				}
 			},
@@ -375,8 +375,8 @@
 				"shadow": "var(--wp--preset--shadow--theme-inset)"
 			},
 			"core/table": {
-				"css": "border-color:var(--wp--preset--color--fdev-fg); border-bottom: solid 0.25rem; & th{ color:var(--wp--preset--color--fdev-bg); background:var(--wp--preset--color--fdev-fg); border: 0px; } & td{ border: 0px; } & tr:nth-child(even){ background: #fff1; }",
-				"color": { "text": "var(--wp--preset--color--fdev-fg)" }
+				"css": "border-color:var(--wp--preset--color--wgj-fg); border-bottom: solid 0.25rem; & th{ color:var(--wp--preset--color--wgj-bg); background:var(--wp--preset--color--wgj-fg); border: 0px; } & td{ border: 0px; } & tr:nth-child(even){ background: #fff1; }",
+				"color": { "text": "var(--wp--preset--color--wgj-fg)" }
 			}
 		}
 	}

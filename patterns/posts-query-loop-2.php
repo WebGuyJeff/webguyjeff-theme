@@ -1,15 +1,15 @@
 <?php
 /**
  * Title: Posts Query loop 2
- * Slug: freedev/posts-query-loop-2
- * Categories: freedev
+ * Slug: webguyjeff/posts-query-loop-2
+ * Categories: webguyjeff
  * Keywords: section, blog, posts, latest
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 $strings = array(
-	'no_posts' => __( 'Unfortunately no posts were found', 'freedev' ),
+	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff' ),
 );
 
 ?>
@@ -30,8 +30,8 @@ $strings = array(
 		<!-- wp:query-pagination-next /-->
 		<!-- /wp:query-pagination -->
 		<!-- wp:query-no-results -->
-		<!-- wp:paragraph {"backgroundColor":"freedev-bg-alt"} -->
-		<p class="has-freedev-bg-alt-background-color has-background">
+		<!-- wp:paragraph {"backgroundColor":"webguyjeff-bg-alt"} -->
+		<p class="has-webguyjeff-bg-alt-background-color has-background">
 			<?php echo esc_html( $strings['no_posts'] ); ?>
 		</p>
 		<!-- /wp:paragraph -->

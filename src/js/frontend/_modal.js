@@ -1,9 +1,9 @@
 /**
- * Freedev Modal Javascript
+ * WebGuyJeff Modal Javascript
  *
  * Handle modal animation and mechanics.
  *
- * @package freedev
+ * @package webguyjeff
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
  */

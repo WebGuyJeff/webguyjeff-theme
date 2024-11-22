@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Posts Query loop
- * Slug: freedev/posts-query-loop
- * Categories: freedev
+ * Slug: webguyjeff/posts-query-loop
+ * Categories: webguyjeff
  * Keywords: section, blog, posts, latest
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 $strings = array(
-	'button'   => __( 'Go to post', 'freedev' ),
-	'title'    => __( 'Posts Query loop', 'freedev' ),
-	'no_posts' => __( 'Unfortunately no posts were found', 'freedev' ),
+	'button'   => __( 'Go to post', 'webguyjeff' ),
+	'title'    => __( 'Posts Query loop', 'webguyjeff' ),
+	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff' ),
 );
 
 ?>
@@ -32,7 +32,7 @@ $strings = array(
 		<!-- wp:post-date {"fontSize":"small"} /-->
 		<!-- wp:post-title /-->
 		<!-- wp:post-terms {"term":"category","fontSize":"small"} /-->
-		<!-- wp:post-excerpt {"moreText":"\u003cstrong\u003e<?php echo esc_html( $strings['button'] ); ?>\u003c/strong\u003e","style":{"elements":{"link":{"color":{"text":"var:preset|color|freedev-accent"}}}}} /-->
+		<!-- wp:post-excerpt {"moreText":"\u003cstrong\u003e<?php echo esc_html( $strings['button'] ); ?>\u003c/strong\u003e","style":{"elements":{"link":{"color":{"text":"var:preset|color|webguyjeff-accent"}}}}} /-->
 		<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
 		<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
@@ -43,8 +43,8 @@ $strings = array(
 		<!-- wp:query-pagination-next /-->
 		<!-- /wp:query-pagination -->
 		<!-- wp:query-no-results -->
-		<!-- wp:paragraph {"backgroundColor":"freedev-bg-alt"} -->
-		<p class="has-freedev-bg-alt-background-color has-background">
+		<!-- wp:paragraph {"backgroundColor":"webguyjeff-bg-alt"} -->
+		<p class="has-webguyjeff-bg-alt-background-color has-background">
 			<?php echo esc_html( $strings['no_posts'] ); ?>
 		</p>
 		<!-- /wp:paragraph -->

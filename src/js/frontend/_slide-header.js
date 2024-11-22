@@ -1,9 +1,9 @@
 /**
- * Freedev Slide-Header
+ * WebGuyJeff Slide-Header
  *
  * Handle header slide animation on button click and scroll events.
  *
- * @package freedev
+ * @package webguyjeff
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
  */
@@ -11,9 +11,10 @@
 const slideHeader = () => {
 
 	let header,
-		lastScrollY = 0,
-		isAnimating = false,
-		isThrottled = false
+		lastScrollY    = 0,
+		isAnimating    = false,
+		isThrottled    = false,
+		squishDistance = 50
 
 	const init = () => {
 		const target = document.querySelector( '.jsSlideHeader' )
@@ -33,17 +34,18 @@ const slideHeader = () => {
 		const wait = setTimeout( () => {
 			clearTimeout( wait )
 			isThrottled = false
-		}, 100 )
+		}, 10 )
 	}
 
 	const hasScrolled = () => {
 		const currentScrollY = window.scrollY
 		const isScrollingDown = ( currentScrollY > lastScrollY ) ? true : false
 		lastScrollY = currentScrollY
-		const isBelowFold = window.scrollY > window.innerHeight
+		const isBelowFold  = window.scrollY > window.innerHeight
+		const shouldSquish = window.scrollY > squishDistance
 
 		// Style.
-		if ( isBelowFold ) {
+		if ( shouldSquish ) {
 			header.classList.add( 'is-squished' )
 		} else {
 			header.classList.remove( 'is-squished' )

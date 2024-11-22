@@ -1,10 +1,10 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
  * Escape filters and args for use with wp_kses().
  *
- * @package freedev
+ * @package webguyjeff
  */
 class Escape {
 
@@ -13,10 +13,10 @@ class Escape {
 	 * Paths to json data.
 	 */
 	private const PATHS = array(
-		'html_global' => FREEDEV_PATH . 'data/htmlGlobalAttributes.json',
-		'html_head'   => FREEDEV_PATH . 'data/htmlHeadAttributes.json',
-		'html_svg'    => FREEDEV_PATH . 'data/htmlSVGAttributes.json',
-		'css_props'   => FREEDEV_PATH . 'data/cssProperties.json',
+		'html_global' => WEBGUYJEFF_PATH . 'data/htmlGlobalAttributes.json',
+		'html_head'   => WEBGUYJEFF_PATH . 'data/htmlHeadAttributes.json',
+		'html_svg'    => WEBGUYJEFF_PATH . 'data/htmlSVGAttributes.json',
+		'css_props'   => WEBGUYJEFF_PATH . 'data/cssProperties.json',
 	);
 
 

@@ -1,5 +1,5 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
  * Bigup Web Admin Menu.
@@ -104,9 +104,9 @@ class Settings_Parent {
 		if ( ! wp_script_is( 'bigup_icons', 'registered' ) ) {
 			wp_register_style(
 				'bigup_icons',
-				FREEDEV_URL . 'dashicons/css/bigup-icons.css',
+				WEBGUYJEFF_URL . 'dashicons/css/bigup-icons.css',
 				array(),
-				filemtime( FREEDEV_PATH . 'dashicons/css/bigup-icons.css' ),
+				filemtime( WEBGUYJEFF_PATH . 'dashicons/css/bigup-icons.css' ),
 				'all'
 			);
 		}

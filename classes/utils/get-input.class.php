@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
- * Custom Field Inputs - Freedev Theme.
+ * Custom Field Inputs - WebGuyJeff Theme.
  *
  * A library of admin form input fields.
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 class Get_Input {

@@ -1,10 +1,10 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
- * Freedev Theme Entry.
+ * WebGuyJeff Theme Entry.
  *
- * @package freedev
+ * @package webguyjeff
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
  */
@@ -13,13 +13,13 @@ namespace BigupWeb\Freedev;
 $enable_debug = true;
 
 // Set global constants.
-define( 'FREEDEV_DEBUG', $enable_debug );
-define( 'FREEDEV_PATH', trailingslashit( __DIR__ ) );
-define( 'FREEDEV_URL', trailingslashit( get_site_url( null, strstr( __DIR__, '/wp-content/' ) ) ) );
+define( 'WEBGUYJEFF_DEBUG', $enable_debug );
+define( 'WEBGUYJEFF_PATH', trailingslashit( __DIR__ ) );
+define( 'WEBGUYJEFF_URL', trailingslashit( get_site_url( null, strstr( __DIR__, '/wp-content/' ) ) ) );
 
 // Register namespaced autoloader.
-$namespace = 'BigupWeb\\Freedev\\';
-$root      = FREEDEV_PATH . 'classes/';
+$namespace = 'BigupWeb\\WebGuyJeff\\';
+$root      = WEBGUYJEFF_PATH . 'classes/';
 require_once $root . 'autoload.php';
 
 // Setup the plugin.

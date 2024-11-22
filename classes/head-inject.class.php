@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
  * Head Inject Handler.
  *
  * Builds and prints markup for the html head.
  *
- * @package freedev
+ * @package webguyjeff
  */
 class Head_Inject {
 
@@ -32,9 +32,9 @@ class Head_Inject {
 	 * Print head markup.
 	 */
 	public function print_head_markup() {
-		$output  = "<!-- Freedev theme: START -->\n";
+		$output  = "<!-- WebGuyJeff theme: START -->\n";
 		$output .= $this->verification_markup;
-		$output .= "<!-- Freedev theme: END -->\n";
+		$output .= "<!-- WebGuyJeff theme: END -->\n";
 
 		Escape::head( $output );
 	}

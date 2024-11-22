@@ -1,7 +1,7 @@
 /**
- * Freedev Mobile Popup Menu Functionality
+ * WebGuyJeff Mobile Popup Menu Functionality
  *
- * @package freedev
+ * @package webguyjeff
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
  */

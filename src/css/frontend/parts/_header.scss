@@ -14,7 +14,8 @@
 		position: relative;
 		height: 7rem;
 		min-width: 7rem;
-		transition: height var(--wp--custom--transition--hover-time);
+		transition: height var(--wp--custom--transition--hover-time),
+		            min-width var(--wp--custom--transition--hover-time);
 
 		.logo-large,
 		.logo-small {
@@ -31,6 +32,10 @@
 
 		.logo-large { opacity: 1; }
 		.logo-small { opacity: 0; }
+	}
+
+	nav {
+		text-transform: capitalize;
 	}
 
 	&.is-squished {
@@ -60,42 +65,55 @@
 	.jsSlideHeader_grid {
 		gap: 1rem !important;
 		display: grid !important;
-		grid-template-columns: 0px 6rem 1fr 0px 0px !important;
+		grid-template-columns: 12rem 1fr 0px !important;
 		min-height: 8rem;
 		pointer-events: auto;
 		transition: all var(--wp--custom--transition--hover-time) ease-in;
 
-		// Nav column.
-		&>*:nth-child(3) {
+		// Nav Column.
+		&>*:nth-child(2) {
 			justify-content: flex-end;
 		}
 
-		// Button column.
-		&>*:nth-child(4) {
-			display: none;
-		}
-
-		// Social column.
-		&>*:nth-child(5) {
+		// CTA / Social Column.
+		&>*:nth-child(3) {
 			display: none;
 		}
 
 		@media (min-width: 35rem) {
-			grid-template-columns: 1fr 6rem minmax(0px, 44rem) 0px 1fr !important;
+			grid-template-columns: 24rem 1fr !important;
 		}
 
-		@media (min-width: 70rem) {
-			grid-template-columns: 1fr minmax(0px, 10rem) minmax(0px, 50rem) minmax(0px, 10rem) 1fr !important;
+		@media (min-width: 75rem) {
+			grid-template-columns: 24rem 1fr 24rem !important;
 
-			// Nav column.
-			&>*:nth-child(3) {
+			// Nav Column.
+			&>*:nth-child(2) {
 				justify-content: center;
 			}
 
-			// Button column.
-			&>*:nth-child(4) {
+			// CTA / Social Column.
+			&>*:nth-child(3) {
 				display: flex;
+
+				// Social.
+				.social {
+					display: none;
+				}
 			}
+		}
+
+		@media (min-width: 100rem) {
+
+			// CTA / Social Column.
+			&>*:nth-child(3) {
+
+				// Social.
+				.social {
+					display: flex;
+				}
+			}
+
 		}
 
 		@media (min-width:90rem) {

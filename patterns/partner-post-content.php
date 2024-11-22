@@ -1,20 +1,20 @@
 <?php
 /**
  * Title: Partner Post Content
- * Slug: freedev/partner-post-content
- * Categories: freedev
+ * Slug: webguyjeff/partner-post-content
+ * Categories: webguyjeff
  * Keywords: partner, post
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 $strings = array(
-	'title'  => __( 'Estate Agents', 'freedev' ),
-	'button' => __( 'Visit Our Partner', 'freedev' ),
+	'title'  => __( 'Estate Agents', 'webguyjeff' ),
+	'button' => __( 'Visit Our Partner', 'webguyjeff' ),
 );
 
 $partner_colour = '#fe6150';
-$partner_image  = FREEDEV_URL . 'assets/svg/pattern-images/shape-05.svg';
+$partner_image  = WEBGUYJEFF_URL . 'assets/svg/pattern-images/shape-05.svg';
 
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"className":"partner-container","layout":{"type":"constrained"},"metadata":{"name":""}} -->
@@ -50,15 +50,15 @@ $partner_image  = FREEDEV_URL . 'assets/svg/pattern-images/shape-05.svg';
 					<div class="wp-block-group partner-container--copy" style="border-radius:1rem;padding-top:0;padding-bottom:0">
 						<!-- wp:group {"style":{"border":{"radius":"1rem"},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 						<div class="wp-block-group" style="border-radius:1rem;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)">
-							<!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|fdev-bg"}}},"typography":{"textTransform":"capitalize"}},"textColor":"fdev-bg","fontSize":"xxx-large"} -->
-							<h3 class="wp-block-heading has-fdev-bg-color has-text-color has-link-color has-xxx-large-font-size" style="text-transform:capitalize"><?php echo esc_html( $strings['title'] ); ?></h3>
+							<!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|wgj-bg"}}},"typography":{"textTransform":"capitalize"}},"textColor":"wgj-bg","fontSize":"xxx-large"} -->
+							<h3 class="wp-block-heading has-wgj-bg-color has-text-color has-link-color has-xxx-large-font-size" style="text-transform:capitalize"><?php echo esc_html( $strings['title'] ); ?></h3>
 							<!-- /wp:heading -->
 						</div>
 						<!-- /wp:group -->
-						<!-- wp:group {"style":{"border":{"radius":"2rem","width":"0rem","style":"none"},"elements":{"link":{"color":{"text":"var:preset|color|fdev-bg-alt"}}}},"backgroundColor":"fdev-bg-alt","textColor":"fdev-bg-alt","className":"has-shadow-soft","layout":{"type":"constrained"}} -->
-						<div class="wp-block-group has-shadow-soft has-fdev-bg-alt-color has-fdev-bg-alt-background-color has-text-color has-background has-link-color" style="border-style:none;border-width:0rem;border-radius:2rem">
-							<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|fdev-fg-alt"}}},"border":{"radius":"1rem"}},"textColor":"fdev-fg-alt","layout":{"type":"constrained"}} -->
-							<div class="wp-block-group has-fdev-fg-alt-color has-text-color has-link-color" style="border-radius:1rem;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
+						<!-- wp:group {"style":{"border":{"radius":"2rem","width":"0rem","style":"none"},"elements":{"link":{"color":{"text":"var:preset|color|wgj-bg-alt"}}}},"backgroundColor":"wgj-bg-alt","textColor":"wgj-bg-alt","className":"has-shadow-soft","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group has-shadow-soft has-wgj-bg-alt-color has-wgj-bg-alt-background-color has-text-color has-background has-link-color" style="border-style:none;border-width:0rem;border-radius:2rem">
+							<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|wgj-fg-alt"}}},"border":{"radius":"1rem"}},"textColor":"wgj-fg-alt","layout":{"type":"constrained"}} -->
+							<div class="wp-block-group has-wgj-fg-alt-color has-text-color has-link-color" style="border-radius:1rem;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
 								<!-- wp:paragraph -->
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								<!-- /wp:paragraph -->
@@ -89,8 +89,8 @@ $partner_image  = FREEDEV_URL . 'assets/svg/pattern-images/shape-05.svg';
 		<!-- /wp:bigup-blocks/vector-shapes -->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"fdev-bg-alt","className":"partner-container\u002d\u002dinner-bottom","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull partner-container--inner-bottom has-fdev-bg-alt-background-color has-background" style="padding-top:0;padding-bottom:0">
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"wgj-bg-alt","className":"partner-container\u002d\u002dinner-bottom","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull partner-container--inner-bottom has-wgj-bg-alt-background-color has-background" style="padding-top:0;padding-bottom:0">
 		<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 			<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"0","bottom":"0"}}},"className":".partner-container\u002d\u002dcolumns"} -->
@@ -117,8 +117,8 @@ $partner_image  = FREEDEV_URL . 'assets/svg/pattern-images/shape-05.svg';
 		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"fdev-bg-alt","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull has-fdev-bg-alt-background-color has-background" style="padding-top:0;padding-bottom:0">
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"wgj-bg-alt","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull has-wgj-bg-alt-background-color has-background" style="padding-top:0;padding-bottom:0">
 		<!-- wp:bigup-blocks/vector-shapes {"currentColor":"#fcfcfc","className":"alignfull"} -->
 		<svg
 			xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 60" style="color:#fcfcfc;display:block" class="wp-block-bigup-blocks-vector-shapes alignfull">

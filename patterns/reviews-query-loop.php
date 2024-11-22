@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Reviews Query Loop
- * Slug: freedev/reviews-query-loop
- * Categories: freedev
+ * Slug: webguyjeff/reviews-query-loop
+ * Categories: webguyjeff
  * Keywords: reviews, latest
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 $strings = array(
@@ -18,8 +18,8 @@ $strings = array(
 	<!-- wp:query {"queryId":24,"query":{"perPage":10,"pages":0,"offset":0,"postType":"review","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|fdev-bg"}}}},"backgroundColor":"fdev-bg-alt","textColor":"fdev-bg","className":"has-border-radius-medium","layout":{"inherit":false}} -->
-		<div class="wp-block-group has-border-radius-medium has-fdev-bg-color has-fdev-bg-alt-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|wgj-bg"}}}},"backgroundColor":"wgj-bg-alt","textColor":"wgj-bg","className":"has-border-radius-medium","layout":{"inherit":false}} -->
+		<div class="wp-block-group has-border-radius-medium has-wgj-bg-color has-wgj-bg-alt-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->

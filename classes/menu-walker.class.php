@@ -1,13 +1,13 @@
 <?php
 /**
- * Freedev Custom Menu_Walker Class.
+ * WebGuyJeff Custom Menu_Walker Class.
  *
- * @package freedev
+ * @package webguyjeff
  * @author Jefferson Real <me@jeffersonreal.uk>
  * @copyright Copyright 2023 Jefferson Real
  */
 
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 // WordPress Dependencies.
 use Walker_Nav_Menu;

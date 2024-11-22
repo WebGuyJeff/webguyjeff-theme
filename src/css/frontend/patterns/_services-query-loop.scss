@@ -8,10 +8,10 @@
 		}
 
 		// Editor adds hidden items, so we have to filter them by not selecting [style="display: none;"].
-		&:nth-child( 4n+1 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--fdev-yellow); }
-		&:nth-child( 4n+2 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--fdev-green-light); }
-		&:nth-child( 4n+3 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--fdev-accent); }
-		&:nth-child( 4n+4 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--fdev-green-dark); }
+		&:nth-child( 4n+1 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--wgj-yellow); }
+		&:nth-child( 4n+2 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--wgj-green-light); }
+		&:nth-child( 4n+3 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--wgj-accent); }
+		&:nth-child( 4n+4 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--wgj-green-dark); }
 	}
 
 	li {

@@ -1,10 +1,10 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
  * Settings Tab - Verification.
  *
- * @package freedev
+ * @package webguyjeff
  */
 class Settings_Tab_Verification {
 

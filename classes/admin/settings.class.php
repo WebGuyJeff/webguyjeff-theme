@@ -1,5 +1,5 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
  * Admin Settings Handler.
@@ -9,19 +9,19 @@ namespace BigupWeb\Freedev;
  * @copyright Copyright (c) 2023, Jefferson Real
  * @license GPL3+
  * @link https://jeffersonreal.uk
- * @package freedev
+ * @package webguyjeff
  */
 
 
 /**
- * Freedev - Admin Settings.
+ * WebGuyJeff - Admin Settings.
  *
  * Hook into the WP admin area and add menu settings pages.
  */
 class Settings {
 
-	private const SLUG  = 'freedev-settings';
-	public $admin_label = 'Freedev Theme';
+	private const SLUG  = 'webguyjeff-settings';
+	public $admin_label = 'WebGuyJeff Theme';
 	private $parent_slug;
 
 
@@ -56,7 +56,7 @@ class Settings {
 			<h1>
 				<?php echo esc_html( get_admin_page_title() ); ?>
 			</h1>
-			<p>These settings manage the Freedev theme.</p>
+			<p>These settings manage the WebGuyJeff theme.</p>
 
 			<section>
 				<h2>
@@ -145,7 +145,7 @@ class Settings {
 	public function echo_settings_link_callback() {
 		self::echo_dashboard_page_link(
 			'/wp-admin/admin.php?page=' . self::SLUG,
-			'Freedev theme settings'
+			'WebGuyJeff theme settings'
 		);
 	}
 }

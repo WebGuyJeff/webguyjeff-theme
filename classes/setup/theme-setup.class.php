@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\Freedev;
+namespace BigupWeb\WebGuyJeff;
 
 /**
- * Initialise Freedev Theme.
+ * Initialise WebGuyJeff Theme.
  *
  * Setup styles, functions, configuration and all dependencies for this theme.
  *
- * @package freedev
+ * @package webguyjeff
  */
 class Theme_Setup {
 
@@ -25,7 +25,7 @@ class Theme_Setup {
 		add_action( 'bigup_settings_dashboard_entry', array( &$Settings, 'echo_settings_link_callback' ), 10, 0 );
 
 		// Gut' way to load stylesheet to match editor to frontend... (doesn't seem to override .editor-styles-wrapper).
-		add_editor_style( FREEDEV_URL . 'build/css/freedev.css' );
+		add_editor_style( WEBGUYJEFF_URL . 'build/css/webguyjeff.css' );
 
 		// Methods in this class.
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_front_end_scripts_and_styles' ), 10, 0 );
@@ -47,11 +47,11 @@ class Theme_Setup {
 	 */
 	public function register_front_end_scripts_and_styles() {
 		if ( $GLOBALS['pagenow'] !== 'wp-login.php' ) {
-			wp_enqueue_style( 'freedev_css', FREEDEV_URL . 'build/css/freedev.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev.css' ), 'all' );
-			wp_enqueue_script( 'freedev_js', FREEDEV_URL . 'build/js/freedev.js', array(), filemtime( FREEDEV_PATH . 'build/js/freedev.js' ), true );
+			wp_enqueue_style( 'webguyjeff_css', WEBGUYJEFF_URL . 'build/css/webguyjeff.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/webguyjeff.css' ), 'all' );
+			wp_enqueue_script( 'webguyjeff_js', WEBGUYJEFF_URL . 'build/js/webguyjeff.js', array(), filemtime( WEBGUYJEFF_PATH . 'build/js/webguyjeff.js' ), true );
 		}
-		if ( current_user_can( 'manage_options' ) && FREEDEV_DEBUG ) {
-			wp_enqueue_style( 'freedev_dev_css', FREEDEV_URL . 'build/css/freedev-dev.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev-dev.css' ), 'all' );
+		if ( current_user_can( 'manage_options' ) && WEBGUYJEFF_DEBUG ) {
+			wp_enqueue_style( 'webguyjeff_dev_css', WEBGUYJEFF_URL . 'build/css/webguyjeff-dev.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/webguyjeff-dev.css' ), 'all' );
 		}
 	}
 
@@ -60,11 +60,11 @@ class Theme_Setup {
 	 * Register admin scripts and styles.
 	 */
 	public function register_admin_scripts_and_styles() {
-		wp_enqueue_style( 'freedev_admin_css', FREEDEV_URL . 'build/css/freedev-admin.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev-admin.css' ), 'all' );
+		wp_enqueue_style( 'webguyjeff_admin_css', WEBGUYJEFF_URL . 'build/css/webguyjeff-admin.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/webguyjeff-admin.css' ), 'all' );
 
 		// Development styles.
-		if ( current_user_can( 'manage_options' ) && FREEDEV_DEBUG ) {
-			wp_enqueue_style( 'freedev_dev_css', FREEDEV_URL . 'build/css/freedev-dev.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev-dev.css' ), 'all' );
+		if ( current_user_can( 'manage_options' ) && WEBGUYJEFF_DEBUG ) {
+			wp_enqueue_style( 'webguyjeff_dev_css', WEBGUYJEFF_URL . 'build/css/webguyjeff-dev.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/webguyjeff-dev.css' ), 'all' );
 		}
 	}
 
@@ -73,7 +73,7 @@ class Theme_Setup {
 	 * Register editor scripts and styles.
 	 */
 	public function register_editor_scripts_and_styles() {
-		wp_enqueue_style( 'freedev_editor_css', FREEDEV_URL . 'build/css/freedev-editor.css', array(), filemtime( FREEDEV_PATH . 'build/css/freedev-editor.css' ), 'all' );
+		wp_enqueue_style( 'webguyjeff_editor_css', WEBGUYJEFF_URL . 'build/css/webguyjeff-editor.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/webguyjeff-editor.css' ), 'all' );
 	}
 
 
@@ -91,7 +91,7 @@ class Theme_Setup {
 	 * Setup theme defaults and register support for WordPress features.
 	 */
 	public function theme_supports_and_features() {
-		load_theme_textdomain( 'freedev', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'webguyjeff', get_template_directory() . '/languages' );
 		add_theme_support( 'editor-styles' );
 		add_theme_support( 'block-template-parts' );
 		add_theme_support( 'wp-block-styles' );

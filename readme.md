@@ -1,4 +1,4 @@
-# Freedev
+# WebGuyJeff
 
 ## A WordPress theme for small businesses and startups.
 

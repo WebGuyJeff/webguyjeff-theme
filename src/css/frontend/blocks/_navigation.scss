@@ -28,11 +28,11 @@
 		.wp-block-navigation-item {
 
 			// Define underline colours.
-			&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--fdev-accent); }
-			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--fdev-yellow); }
-			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--fdev-green-lightest); }
-			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--fdev-green-light); }
-			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--fdev-green-dark); }
+			&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--wgj-accent); }
+			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--wgj-yellow); }
+			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--wgj-green-lightest); }
+			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--wgj-green-light); }
+			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--wgj-green-dark); }
 
 			// Underline colours (exclude sub-menu items).
 			&:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {
@@ -51,7 +51,7 @@
 				
 					background-image: 
 					linear-gradient(to right, var(--menuColour), var(--menuColour)),
-					linear-gradient(to right, var(--wp--preset--color--fdev-fg-alt), var(--wp--preset--color--fdev-fg-alt));
+					linear-gradient(to right, var(--wp--preset--color--wgj-fg-alt), var(--wp--preset--color--wgj-fg-alt));
 					background-position: 100% 100%, 0 100%;
 					background-repeat: no-repeat;
 					background-size: 100%, 0;
@@ -86,7 +86,7 @@
 
 					&:hover a {
 						background-color: var(--menuColour) !important;
-						color: var(--wp--preset--color--fdev-fg-alt) !important;
+						color: var(--wp--preset--color--wgj-fg-alt) !important;
 					}
 				}
 			}
@@ -108,8 +108,8 @@
 	.wp-block-navigation__responsive-container.is-menu-open {
 		z-index: 10;
 		gap: var(--wp--preset--spacing--50);
-		background: var(--wp--preset--color--fdev-bg-alt) !important;
-		color: var(--wp--preset--color--fdev-fg-alt) !important;
+		background: var(--wp--preset--color--wgj-bg-alt) !important;
+		color: var(--wp--preset--color--wgj-fg-alt) !important;
 
 		height: 100%;
 	

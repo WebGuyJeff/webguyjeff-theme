@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Reviews: Latest 3
- * Slug: freedev/reviews-latest-3
- * Categories: freedev
+ * Slug: webguyjeff/reviews-latest-3
+ * Categories: webguyjeff
  * Keywords: reviews, latest, section
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 $strings = array(
-	'title'  => __( 'Reviews', 'freedev' ),
-	'byline' => __( 'What our customers are saying', 'freedev' ),
-	'button' => __( 'See All Reviews', 'freedev' ),
+	'title'  => __( 'Reviews', 'webguyjeff' ),
+	'byline' => __( 'What our customers are saying', 'webguyjeff' ),
+	'button' => __( 'See All Reviews', 'webguyjeff' ),
 	'stars'  => '⭐⭐⭐⭐⭐',
 );
 
@@ -30,8 +30,8 @@ $strings = array(
 	<!-- wp:query {"queryId":24,"query":{"perPage":"3","pages":"1","offset":0,"postType":"review","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:post-template {"className":"has-gutter-medium","layout":{"type":"grid","columnCount":3}} -->
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|fdev-bg"}}}},"backgroundColor":"fdev-bg-alt","textColor":"fdev-bg","className":"has-border-radius-medium has-overflow-hidden has-shadow-soft","layout":{"inherit":false}} -->
-		<div class="wp-block-group has-border-radius-medium has-overflow-hidden has-shadow-soft has-fdev-bg-color has-fdev-bg-alt-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+		<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|wgj-bg"}}}},"backgroundColor":"wgj-bg-alt","textColor":"wgj-bg","className":"has-border-radius-medium has-overflow-hidden has-shadow-soft","layout":{"inherit":false}} -->
+		<div class="wp-block-group has-border-radius-medium has-overflow-hidden has-shadow-soft has-wgj-bg-color has-wgj-bg-alt-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|50"}}},"className":"gs_reveal","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 			<div class="wp-block-group gs_reveal" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
 				<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
@@ -54,8 +54,8 @@ $strings = array(
 					<path fill="currentColor" d="M960 24c641 55 960 0 960 0v37H0V24s319-54 960 0Z"></path>
 				</svg>
 				<!-- /wp:bigup-blocks/vector-shapes -->
-				<!-- wp:columns {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|fdev-fg"}}}},"backgroundColor":"fdev-yellow","textColor":"fdev-fg"} -->
-				<div class="wp-block-columns has-fdev-fg-color has-fdev-yellow-background-color has-text-color has-background has-link-color" style="padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:columns {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|wgj-fg"}}}},"backgroundColor":"wgj-yellow","textColor":"wgj-fg"} -->
+				<div class="wp-block-columns has-wgj-fg-color has-wgj-yellow-background-color has-text-color has-background has-link-color" style="padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
 					<!-- wp:column {"width":"50%"} -->
 					<div class="wp-block-column" style="flex-basis:50%">
 						<!-- wp:bigup-reviews/review-name /-->

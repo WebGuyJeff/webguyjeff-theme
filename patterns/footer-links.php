@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Footer links
- * Slug: freedev/footer-links
- * Categories: freedev
+ * Slug: webguyjeff/footer-links
+ * Categories: webguyjeff
  * Keywords: footer, links, copyright
  *
- * @package freedev
+ * @package webguyjeff
  */
 
 ?>
@@ -15,7 +15,7 @@
 	<div class="wp-block-group">
 		<!-- wp:paragraph {"fontSize":"extra-small"} -->
 		<p class="has-extra-small-font-size">
-			<?php echo esc_html__( 'Copyright', 'freedev' ) . ' ' . esc_html( date_i18n( _x( 'Y', 'copyright date format', 'freedev' ) ) ); ?>
+			<?php echo esc_html__( 'Copyright', 'webguyjeff' ) . ' ' . esc_html( date_i18n( _x( 'Y', 'copyright date format', 'webguyjeff' ) ) ); ?>
 		</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:site-title {"level":0, "fontSize":"extra-small"} /-->

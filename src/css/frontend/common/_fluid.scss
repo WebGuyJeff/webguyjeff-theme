@@ -5,6 +5,6 @@
  * @see https://websemantics.uk/tools/responsive-font-calculator/
  */
 :root {
-	--fdev--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
-	font-size: var( --fdev--fluid-root );
+	--wgj--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
+	font-size: var( --wgj--fluid-root );
 }
