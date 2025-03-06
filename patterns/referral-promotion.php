@@ -1,28 +1,28 @@
 <?php
 /**
  * Title: Referral Promotion
- * Slug: webguyjeff/referral-promotion
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/referral-promotion
+ * Categories: webguyjeff-theme
  * Keywords: referral, promotion
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'       => __( 'Refer Friends and Get Rewarded', 'webguyjeff' ),
-	'byline'      => __( 'We appreciate your loyalty and would like to offer you a little thanks for spreading the word. Refer a friend to get £25, then get an additional £25 for each friend after that!', 'webguyjeff' ),
+	'title'       => __( 'Refer Friends and Get Rewarded', 'webguyjeff-theme' ),
+	'byline'      => __( 'We appreciate your loyalty and would like to offer you a little thanks for spreading the word. Refer a friend to get £25, then get an additional £25 for each friend after that!', 'webguyjeff-theme' ),
 	'tiers'       => array(
-		'item' => __( 'Referral', 'webguyjeff' ),
+		'item' => __( 'Referral', 'webguyjeff-theme' ),
 		'nths' => array(
-			'1' => __( '1st', 'webguyjeff' ),
-			'2' => __( '2nd', 'webguyjeff' ),
-			'3' => __( '3rd', 'webguyjeff' ),
-			'4' => __( '4th', 'webguyjeff' ),
-			'5' => __( '5th', 'webguyjeff' ),
-			'6' => __( '6th', 'webguyjeff' ),
+			'1' => __( '1st', 'webguyjeff-theme' ),
+			'2' => __( '2nd', 'webguyjeff-theme' ),
+			'3' => __( '3rd', 'webguyjeff-theme' ),
+			'4' => __( '4th', 'webguyjeff-theme' ),
+			'5' => __( '5th', 'webguyjeff-theme' ),
+			'6' => __( '6th', 'webguyjeff-theme' ),
 		),
 	),
-	'tandc_title' => __( 'Terms and conditions', 'webguyjeff' ),
+	'tandc_title' => __( 'Terms and conditions', 'webguyjeff-theme' ),
 );
 
 $eyebrow_image = WEBGUYJEFF_URL . 'assets/svg/pattern-images/spread-the-love.svg';

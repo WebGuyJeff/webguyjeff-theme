@@ -1,10 +1,10 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Escape filters and args for use with wp_kses().
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 class Escape {
 

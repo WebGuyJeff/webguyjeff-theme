@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Sanitize settings and inputs.
  *
  * Methods which can be called statically or as callbacks to sanitize values.
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 class Sanitize {
 

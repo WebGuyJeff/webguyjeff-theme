@@ -2,12 +2,12 @@
 /**
  * WebGuyJeff Custom Menu_Walker Class.
  *
- * @package webguyjeff
- * @author Jefferson Real <me@jeffersonreal.uk>
+ * @package webguyjeff-theme
+ * @author Jefferson Real <jeff@webguyjeff.com>
  * @copyright Copyright 2023 Jefferson Real
  */
 
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 // WordPress Dependencies.
 use Walker_Nav_Menu;

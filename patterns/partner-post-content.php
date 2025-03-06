@@ -1,16 +1,16 @@
 <?php
 /**
  * Title: Partner Post Content
- * Slug: webguyjeff/partner-post-content
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/partner-post-content
+ * Categories: webguyjeff-theme
  * Keywords: partner, post
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'  => __( 'Estate Agents', 'webguyjeff' ),
-	'button' => __( 'Visit Our Partner', 'webguyjeff' ),
+	'title'  => __( 'Estate Agents', 'webguyjeff-theme' ),
+	'button' => __( 'Visit Our Partner', 'webguyjeff-theme' ),
 );
 
 $partner_colour = '#fe6150';

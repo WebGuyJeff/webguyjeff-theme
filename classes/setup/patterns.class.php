@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 use WP_Block_Pattern_Categories_Registry;
 
 /**
  * Setup block patterns.
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 class Patterns {
 
@@ -22,8 +22,8 @@ class Patterns {
 	 */
 	public function __construct() {
 		$this->categories = array(
-			'webguyjeff'   => array( 'label' => __( 'WebGuyJeff Theme Patterns', 'webguyjeff' ) ),
-			'bigupweb' => array( 'label' => __( 'Bigup Web Patterns', 'webguyjeff' ) ),
+			'webguyjeff-theme'   => array( 'label' => __( 'WebGuyJeff Theme Patterns', 'webguyjeff-theme' ) ),
+			'bigupweb' => array( 'label' => __( 'Bigup Web Patterns', 'webguyjeff-theme' ) ),
 		);
 	}
 

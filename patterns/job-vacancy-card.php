@@ -1,20 +1,20 @@
 <?php
 /**
  * Title: Job Vacancy Card
- * Slug: webguyjeff/job-vacancy-card
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/job-vacancy-card
+ * Categories: webguyjeff-theme
  * Keywords: job, card
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'        => __( 'Mortgage and Protection Adviser', 'webguyjeff' ),
-	'location'     => __( 'Hampshire', 'webguyjeff' ),
-	'pay'          => __( '£20,000 - £130,000', 'webguyjeff' ),
-	'type'         => __( 'Permanent, Full-time', 'webguyjeff' ),
-	'requirements' => __( '3+ Years Experience', 'webguyjeff' ),
-	'button'       => __( 'View', 'webguyjeff' ),
+	'title'        => __( 'Mortgage and Protection Adviser', 'webguyjeff-theme' ),
+	'location'     => __( 'Hampshire', 'webguyjeff-theme' ),
+	'pay'          => __( '£20,000 - £130,000', 'webguyjeff-theme' ),
+	'type'         => __( 'Permanent, Full-time', 'webguyjeff-theme' ),
+	'requirements' => __( '3+ Years Experience', 'webguyjeff-theme' ),
+	'button'       => __( 'View', 'webguyjeff-theme' ),
 );
 
 ?>

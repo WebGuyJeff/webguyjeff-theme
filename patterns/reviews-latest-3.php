@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Reviews: Latest 3
- * Slug: webguyjeff/reviews-latest-3
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/reviews-latest-3
+ * Categories: webguyjeff-theme
  * Keywords: reviews, latest, section
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'  => __( 'Reviews', 'webguyjeff' ),
-	'byline' => __( 'What our customers are saying', 'webguyjeff' ),
-	'button' => __( 'See All Reviews', 'webguyjeff' ),
+	'title'  => __( 'Reviews', 'webguyjeff-theme' ),
+	'byline' => __( 'What our customers are saying', 'webguyjeff-theme' ),
+	'button' => __( 'See All Reviews', 'webguyjeff-theme' ),
 	'stars'  => '⭐⭐⭐⭐⭐',
 );
 

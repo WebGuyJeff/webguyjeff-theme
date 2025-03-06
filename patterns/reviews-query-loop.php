@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Reviews Query Loop
- * Slug: webguyjeff/reviews-query-loop
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/reviews-query-loop
+ * Categories: webguyjeff-theme
  * Keywords: reviews, latest
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(

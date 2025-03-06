@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Head Inject Handler.
  *
  * Builds and prints markup for the html head.
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 class Head_Inject {
 

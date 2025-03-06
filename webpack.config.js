@@ -9,11 +9,11 @@ module.exports = {
 	...wordpressConfig,
 	entry: {
 		// 'example/output': './path/to/dir/entrypoint.js',
-		'css/webguyjeff': path.join( __dirname, '/src/css/webguyjeff.scss' ),
-		'css/webguyjeff-admin': path.join( __dirname, '/src/css/webguyjeff-admin.scss' ),
-		'css/webguyjeff-editor': path.join( __dirname, '/src/css/webguyjeff-editor.scss' ),
-		'css/webguyjeff-dev': path.join( __dirname, '/src/css/webguyjeff-dev.scss' ),
-		'js/webguyjeff': path.join( __dirname, '/src/js/webguyjeff' ),
+		'css/webguyjeff-theme': path.join( __dirname, '/src/css/webguyjeff-theme.scss' ),
+		'css/webguyjeff-theme-admin': path.join( __dirname, '/src/css/webguyjeff-theme-admin.scss' ),
+		'css/webguyjeff-theme-editor': path.join( __dirname, '/src/css/webguyjeff-theme-editor.scss' ),
+		'css/webguyjeff-theme-dev': path.join( __dirname, '/src/css/webguyjeff-theme-dev.scss' ),
+		'js/webguyjeff-theme': path.join( __dirname, '/src/js/webguyjeff-theme' ),
 	},
 	plugins: [
 		...wordpressConfig.plugins,

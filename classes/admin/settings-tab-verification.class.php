@@ -1,10 +1,10 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Settings Tab - Verification.
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 class Settings_Tab_Verification {
 

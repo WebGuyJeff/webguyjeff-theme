@@ -1,15 +1,15 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Admin Settings Handler.
  *
  * @package bigup-blocks
- * @author Jefferson Real <me@jeffersonreal.uk>
+ * @author Jefferson Real <jeff@webguyjeff.com>
  * @copyright Copyright (c) 2023, Jefferson Real
  * @license GPL3+
- * @link https://jeffersonreal.uk
- * @package webguyjeff
+ * @link https://webguyjeff.com
+ * @package webguyjeff-theme
  */
 
 
@@ -20,7 +20,7 @@ namespace BigupWeb\WebGuyJeff;
  */
 class Settings {
 
-	private const SLUG  = 'webguyjeff-settings';
+	private const SLUG  = 'webguyjeff-theme-settings';
 	public $admin_label = 'WebGuyJeff Theme';
 	private $parent_slug;
 

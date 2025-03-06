@@ -2,12 +2,12 @@
 /**
  * A library of helper functions for WordPress.
  *
- * @package webguyjeff
- * @author Jefferson Real <me@jeffersonreal.uk>
+ * @package webguyjeff-theme
+ * @author Jefferson Real <jeff@webguyjeff.com>
  * @copyright Copyright 2023 Jefferson Real
  */
 
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Utility methods.

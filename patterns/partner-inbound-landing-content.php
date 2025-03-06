@@ -1,36 +1,36 @@
 <?php
 /**
  * Title: Partner Inbound Landing Content
- * Slug: webguyjeff/partner-inbound-landing-content
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/partner-inbound-landing-content
+ * Categories: webguyjeff-theme
  * Keywords: partner, backlink
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
 	'section1' => array(
-		'title'   => __( 'Expert Advice', 'webguyjeff' ),
-		'eyebrow' => __( 'Professional Agency', 'webguyjeff' ),
-		'button'  => __( 'Request a callback', 'webguyjeff' ),
+		'title'   => __( 'Expert Advice', 'webguyjeff-theme' ),
+		'eyebrow' => __( 'Professional Agency', 'webguyjeff-theme' ),
+		'button'  => __( 'Request a callback', 'webguyjeff-theme' ),
 		'image'   => WEBGUYJEFF_URL . 'assets/svg/pattern-images/shape-01.svg',
 	),
 	'section2' => array(
-		'title'   => __( 'Independent Advice', 'webguyjeff' ),
-		'eyebrow' => __( 'In the heart of your town', 'webguyjeff' ),
-		'button'  => __( 'Get in touch today', 'webguyjeff' ),
+		'title'   => __( 'Independent Advice', 'webguyjeff-theme' ),
+		'eyebrow' => __( 'In the heart of your town', 'webguyjeff-theme' ),
+		'button'  => __( 'Get in touch today', 'webguyjeff-theme' ),
 		'image'   => WEBGUYJEFF_URL . 'assets/svg/pattern-images/shape-03.svg',
 	),
 	'section3' => array(
-		'title'    => __( 'Joanna Bloggs', 'webguyjeff' ),
-		'eyebrow'  => __( 'Professional Consultant', 'webguyjeff' ),
-		'subtitle' => __( 'Contact Joanna', 'webguyjeff' ),
+		'title'    => __( 'Joanna Bloggs', 'webguyjeff-theme' ),
+		'eyebrow'  => __( 'Professional Consultant', 'webguyjeff-theme' ),
+		'subtitle' => __( 'Contact Joanna', 'webguyjeff-theme' ),
 		'image'    => WEBGUYJEFF_URL . 'assets/svg/pattern-images/shape-02.svg',
 	),
 	'cta'      => array(
-		'title'  => __( 'Get in Touch', 'webguyjeff' ),
-		'byline' => __( 'Our advisers are here and ready to help you.', 'webguyjeff' ),
-		'button' => __( 'Contact', 'webguyjeff' ),
+		'title'  => __( 'Get in Touch', 'webguyjeff-theme' ),
+		'byline' => __( 'Our advisers are here and ready to help you.', 'webguyjeff-theme' ),
+		'button' => __( 'Contact', 'webguyjeff-theme' ),
 	),
 );
 
@@ -280,19 +280,19 @@ $strings = array(
 	<!-- /wp:group -->
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
-		<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|40"}},"backgroundColor":"webguyjeff-accent","className":"has-responsive-h2","layout":{"inherit":true,"type":"constrained"}} -->
-		<div class="wp-block-group alignfull has-responsive-h2 has-webguyjeff-accent-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|40"}},"backgroundColor":"webguyjeff-theme-accent","className":"has-responsive-h2","layout":{"inherit":true,"type":"constrained"}} -->
+		<div class="wp-block-group alignfull has-responsive-h2 has-webguyjeff-theme-accent-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
 			<!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 			<p class="has-text-align-center has-large-font-size"><?php echo esc_html( $strings['cta']['byline'] ); ?></p>
 			<!-- /wp:paragraph -->
-			<!-- wp:heading {"textAlign":"center","textColor":"webguyjeff-fg-alt","fontSize":"display-medium"} -->
-			<h2 class="wp-block-heading has-text-align-center has-webguyjeff-fg-alt-color has-text-color has-display-medium-font-size"><?php echo esc_html( $strings['cta']['title'] ); ?></h2>
+			<!-- wp:heading {"textAlign":"center","textColor":"webguyjeff-theme-fg-alt","fontSize":"display-medium"} -->
+			<h2 class="wp-block-heading has-text-align-center has-webguyjeff-theme-fg-alt-color has-text-color has-display-medium-font-size"><?php echo esc_html( $strings['cta']['title'] ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">
-				<!-- wp:button {"textColor":"webguyjeff-fg-alt","className":"is-style-fill"} -->
+				<!-- wp:button {"textColor":"webguyjeff-theme-fg-alt","className":"is-style-fill"} -->
 				<div class="wp-block-button is-style-fill">
-					<a class="wp-block-button__link has-webguyjeff-fg-alt-color has-text-color wp-element-button" href="#" target="_blank" rel="noreferrer noopener"><?php echo esc_html( $strings['cta']['button'] ); ?></a>
+					<a class="wp-block-button__link has-webguyjeff-theme-fg-alt-color has-text-color wp-element-button" href="#" target="_blank" rel="noreferrer noopener"><?php echo esc_html( $strings['cta']['button'] ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

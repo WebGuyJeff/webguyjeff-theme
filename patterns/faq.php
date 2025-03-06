@@ -1,18 +1,18 @@
 <?php
 /**
  * Title: Frequently Asked Questions
- * Slug: webguyjeff/faq
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/faq
+ * Categories: webguyjeff-theme
  * Keywords: faq, questions
  * Block Types: core/details
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'  => __( 'Frequently asked Questions', 'webguyjeff' ),
-	'byline' => __( 'Have questions? We have the answers!', 'webguyjeff' ),
-	'button' => __( 'Ask another question', 'webguyjeff' ),
+	'title'  => __( 'Frequently asked Questions', 'webguyjeff-theme' ),
+	'byline' => __( 'Have questions? We have the answers!', 'webguyjeff-theme' ),
+	'button' => __( 'Ask another question', 'webguyjeff-theme' ),
 );
 
 ?>

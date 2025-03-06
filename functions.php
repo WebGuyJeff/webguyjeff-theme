@@ -1,11 +1,11 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * WebGuyJeff Theme Entry.
  *
- * @package webguyjeff
- * @author Jefferson Real <me@jeffersonreal.uk>
+ * @package webguyjeff-theme
+ * @author Jefferson Real <jeff@webguyjeff.com>
  * @copyright Copyright 2023 Jefferson Real
  */
 
@@ -18,7 +18,7 @@ define( 'WEBGUYJEFF_PATH', trailingslashit( __DIR__ ) );
 define( 'WEBGUYJEFF_URL', trailingslashit( get_site_url( null, strstr( __DIR__, '/wp-content/' ) ) ) );
 
 // Register namespaced autoloader.
-$namespace = 'BigupWeb\\WebGuyJeff\\';
+$namespace = 'BigupWeb\\WebGuyJeffTheme\\';
 $root      = WEBGUYJEFF_PATH . 'classes/';
 require_once $root . 'autoload.php';
 

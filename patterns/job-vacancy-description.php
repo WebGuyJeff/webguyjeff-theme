@@ -1,24 +1,24 @@
 <?php
 /**
  * Title: Job Vacancy Description
- * Slug: webguyjeff/job-vacancy-description
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/job-vacancy-description
+ * Categories: webguyjeff-theme
  * Keywords: job, vacancy
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'job_title'      => __( 'Mortgage and Protection Adviser', 'webguyjeff' ),
+	'job_title'      => __( 'Mortgage and Protection Adviser', 'webguyjeff-theme' ),
 	'details'        => array(
-		'title'       => __( 'Job details', 'webguyjeff' ),
-		'pay_title'   => __( 'Pay', 'webguyjeff' ),
-		'type_title'  => __( 'Job Type', 'webguyjeff' ),
-		'shift_title' => __( 'Shift', 'webguyjeff' ),
+		'title'       => __( 'Job details', 'webguyjeff-theme' ),
+		'pay_title'   => __( 'Pay', 'webguyjeff-theme' ),
+		'type_title'  => __( 'Job Type', 'webguyjeff-theme' ),
+		'shift_title' => __( 'Shift', 'webguyjeff-theme' ),
 	),
-	'benefits_title' => __( 'Benefits', 'webguyjeff' ),
-	'duties_title'   => __( 'Duties / key responsibilities', 'webguyjeff' ),
-	'button'         => __( 'Apply Now', 'webguyjeff' ),
+	'benefits_title' => __( 'Benefits', 'webguyjeff-theme' ),
+	'duties_title'   => __( 'Duties / key responsibilities', 'webguyjeff-theme' ),
+	'button'         => __( 'Apply Now', 'webguyjeff-theme' ),
 );
 
 $icons = array(

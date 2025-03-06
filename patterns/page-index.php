@@ -1,19 +1,19 @@
 <?php
 /**
  * Title: Page Index
- * Slug: webguyjeff/page-index
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/page-index
+ * Categories: webguyjeff-theme
  * Keywords: index
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'    => __( 'Explore this Page', 'webguyjeff' ),
-	'section1' => __( 'Section 1', 'webguyjeff' ),
-	'section2' => __( 'Section 2', 'webguyjeff' ),
-	'section3' => __( 'Section 3', 'webguyjeff' ),
-	'faq'      => __( 'Jump to FAQs', 'webguyjeff' ),
+	'title'    => __( 'Explore this Page', 'webguyjeff-theme' ),
+	'section1' => __( 'Section 1', 'webguyjeff-theme' ),
+	'section2' => __( 'Section 2', 'webguyjeff-theme' ),
+	'section3' => __( 'Section 3', 'webguyjeff-theme' ),
+	'faq'      => __( 'Jump to FAQs', 'webguyjeff-theme' ),
 );
 
 ?>

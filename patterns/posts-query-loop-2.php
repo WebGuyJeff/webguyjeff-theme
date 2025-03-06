@@ -1,15 +1,15 @@
 <?php
 /**
  * Title: Posts Query loop 2
- * Slug: webguyjeff/posts-query-loop-2
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/posts-query-loop-2
+ * Categories: webguyjeff-theme
  * Keywords: section, blog, posts, latest
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff' ),
+	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff-theme' ),
 );
 
 ?>
@@ -30,8 +30,8 @@ $strings = array(
 		<!-- wp:query-pagination-next /-->
 		<!-- /wp:query-pagination -->
 		<!-- wp:query-no-results -->
-		<!-- wp:paragraph {"backgroundColor":"webguyjeff-bg-alt"} -->
-		<p class="has-webguyjeff-bg-alt-background-color has-background">
+		<!-- wp:paragraph {"backgroundColor":"webguyjeff-theme-bg-alt"} -->
+		<p class="has-webguyjeff-theme-bg-alt-background-color has-background">
 			<?php echo esc_html( $strings['no_posts'] ); ?>
 		</p>
 		<!-- /wp:paragraph -->

@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Posts Query loop
- * Slug: webguyjeff/posts-query-loop
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/posts-query-loop
+ * Categories: webguyjeff-theme
  * Keywords: section, blog, posts, latest
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'button'   => __( 'Go to post', 'webguyjeff' ),
-	'title'    => __( 'Posts Query loop', 'webguyjeff' ),
-	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff' ),
+	'button'   => __( 'Go to post', 'webguyjeff-theme' ),
+	'title'    => __( 'Posts Query loop', 'webguyjeff-theme' ),
+	'no_posts' => __( 'Unfortunately no posts were found', 'webguyjeff-theme' ),
 );
 
 ?>
@@ -32,7 +32,7 @@ $strings = array(
 		<!-- wp:post-date {"fontSize":"small"} /-->
 		<!-- wp:post-title /-->
 		<!-- wp:post-terms {"term":"category","fontSize":"small"} /-->
-		<!-- wp:post-excerpt {"moreText":"\u003cstrong\u003e<?php echo esc_html( $strings['button'] ); ?>\u003c/strong\u003e","style":{"elements":{"link":{"color":{"text":"var:preset|color|webguyjeff-accent"}}}}} /-->
+		<!-- wp:post-excerpt {"moreText":"\u003cstrong\u003e<?php echo esc_html( $strings['button'] ); ?>\u003c/strong\u003e","style":{"elements":{"link":{"color":{"text":"var:preset|color|webguyjeff-theme-accent"}}}}} /-->
 		<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
 		<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
@@ -43,8 +43,8 @@ $strings = array(
 		<!-- wp:query-pagination-next /-->
 		<!-- /wp:query-pagination -->
 		<!-- wp:query-no-results -->
-		<!-- wp:paragraph {"backgroundColor":"webguyjeff-bg-alt"} -->
-		<p class="has-webguyjeff-bg-alt-background-color has-background">
+		<!-- wp:paragraph {"backgroundColor":"webguyjeff-theme-bg-alt"} -->
+		<p class="has-webguyjeff-theme-bg-alt-background-color has-background">
 			<?php echo esc_html( $strings['no_posts'] ); ?>
 		</p>
 		<!-- /wp:paragraph -->

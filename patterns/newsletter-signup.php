@@ -1,16 +1,16 @@
 <?php
 /**
  * Title: Newsletter Signup
- * Slug: webguyjeff/newsletter-signup
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/newsletter-signup
+ * Categories: webguyjeff-theme
  * Keywords: newsletter, signup
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title'           => __( 'Be the First to Know', 'webguyjeff' ),
-	'byline'          => __( 'Keep in touch for the latest news, products and offers by signing up to receive newsletters, and follow us on social for more regular updates.', 'webguyjeff' ),
+	'title'           => __( 'Be the First to Know', 'webguyjeff-theme' ),
+	'byline'          => __( 'Keep in touch for the latest news, products and offers by signing up to receive newsletters, and follow us on social for more regular updates.', 'webguyjeff-theme' ),
 	'smallprint_html' => 'Please click <a href="/privacy-policy/">here</a> to review our privacy policy before submitting.',
 );
 

@@ -1,12 +1,12 @@
 <?php
-namespace BigupWeb\WebGuyJeff;
+namespace BigupWeb\WebGuyJeffTheme;
 
 /**
  * Custom Field Inputs - WebGuyJeff Theme.
  *
  * A library of admin form input fields.
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 class Get_Input {

@@ -1,15 +1,15 @@
 <?php
 /**
  * Title: Partner List
- * Slug: webguyjeff/partner-list
- * Categories: webguyjeff
+ * Slug: webguyjeff-theme/partner-list
+ * Categories: webguyjeff-theme
  * Keywords: partner, list
  *
- * @package webguyjeff
+ * @package webguyjeff-theme
  */
 
 $strings = array(
-	'title' => __( 'Browse our Partners', 'webguyjeff' ),
+	'title' => __( 'Browse our Partners', 'webguyjeff-theme' ),
 );
 
 ?>
