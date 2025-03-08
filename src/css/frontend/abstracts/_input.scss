@@ -1,0 +1,13 @@
+%input-base {
+	border: none;
+	border-radius: var(--wp--custom--border-radius--large);
+	background-color: var(--wp--preset--color--wgj-bg);
+	cursor: pointer;
+	color: var(--wp--preset--color--wgj-fg);
+
+	&:disabled {
+		cursor: default;
+		pointer-events: none !important;
+		color: #8888;
+	}
+}

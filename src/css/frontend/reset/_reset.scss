@@ -12,21 +12,21 @@ body {
 /* placeholders */
 ::placeholder {
 	opacity: 1; /* Chrome, Firefox, Opera, Safari 10.1+ */ /* Firefox */
-	color: var(--bur_grey-light);
+	color: var(--wgj_grey-light);
   }
 ::-moz-placeholder {
 	opacity: 1; /* Chrome, Firefox, Opera, Safari 10.1+ */ /* Firefox */
-	color: var(--bur_grey-light);
+	color: var(--wgj_grey-light);
   }
 :-ms-input-placeholder {
 	opacity: 1; /* Chrome, Firefox, Opera, Safari 10.1+ */ /* Firefox */
-	color: var(--bur_grey-light);
+	color: var(--wgj_grey-light);
   }
 :-ms-input-placeholder {
-	color: var(--bur_grey-light) /* Internet Explorer 10-11 */
+	color: var(--wgj_grey-light) /* Internet Explorer 10-11 */
 }
 ::-ms-input-placeholder {
-	color: var(--bur_grey-light); /* Microsoft Edge */
+	color: var(--wgj_grey-light); /* Microsoft Edge */
 }
 
 

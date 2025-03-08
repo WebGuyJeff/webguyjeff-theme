@@ -8,11 +8,11 @@ module.exports = {
 	...wordpressConfig,
 	entry: {
 		// 'example/output': './path/to/dir/entrypoint.js',
-		'css/webguyjeff-theme': './src/css/webguyjeff-theme.scss',
-		'css/webguyjeff-theme-admin': './src/css/webguyjeff-theme-admin.scss',
-		'css/webguyjeff-theme-editor': './src/css/webguyjeff-theme-editor.scss',
-		'css/webguyjeff-theme-dev': './src/css/webguyjeff-theme-dev.scss',
-		'js/webguyjeff-theme': './src/js/webguyjeff-theme.js',
+		'css/theme': './src/theme.css.js',
+		'css/theme-admin': './src/theme-admin.css.js',
+		'css/theme-editor': './src/theme-editor.css.js',
+		'css/theme-dev': './src/theme-dev.css.js',
+		'js/theme': './src/theme.js',
 	},
 	plugins: [
 		...wordpressConfig.plugins,

@@ -8,9 +8,9 @@ namespace BigupWeb\WebGuyJeffTheme;
  */
 class Settings_Tab_Identity {
 
-	public const PAGE   = 'bur_page_identity';
-	public const GROUP  = 'bur_group_identity';
-	public const OPTION = 'bur_settings_identity';
+	public const PAGE   = 'wgj_page_identity';
+	public const GROUP  = 'wgj_group_identity';
+	public const OPTION = 'wgj_settings_identity';
 
 	public $settings;
 

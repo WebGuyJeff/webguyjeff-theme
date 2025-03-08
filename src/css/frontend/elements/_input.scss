@@ -1,4 +1,5 @@
-@use '../elements/extends' as *;
+@use '../abstracts/input' as *;
+@use '../abstracts/button' as *;
 
 input,
 textarea,

@@ -184,26 +184,26 @@ class Menu_Walker extends Walker_Nav_Menu {
 		// If element ID is a parent key in array of children...
 		if ( array_key_exists( $id, $children_elements ) ) {
 			// ...it's a parent.
-			$item->bur__is_parent = true;
+			$item->wgj__is_parent = true;
 			// Keep (unreliable) WP var correct because we're nice.
-			$this->has_children = $item->bur__is_parent;
+			$this->has_children = $item->wgj__is_parent;
 
 			// For all children of element...
 			foreach ( $children_elements[ $id ] as $child ) {
 				// ...if one is current...
 				if ( $child->current ) {
 					// ...this parent has an active child.
-					$item->bur__has_active = true;
+					$item->wgj__has_active = true;
 				}
 			}
 		}
 
 		if ( $item->current && ! $this->is_search ) {
 			// Element is active and not on a search page.
-			$item->bur__is_active = true;
+			$item->wgj__is_active = true;
 		} else {
 			// Explicit boolean.
-			$item->bur__is_active = false;
+			$item->wgj__is_active = false;
 		}
 
 		//
@@ -211,7 +211,7 @@ class Menu_Walker extends Walker_Nav_Menu {
 		//
 
 		// If item has children and args allow further depth.
-		if ( ( 0 === $max_depth || $max_depth > $depth + 1 ) && $item->bur__is_parent ) {
+		if ( ( 0 === $max_depth || $max_depth > $depth + 1 ) && $item->wgj__is_parent ) {
 
 			// Open a new menu dropdown component.
 			$this->start_lvl( $output, $depth, $args );
@@ -260,8 +260,8 @@ class Menu_Walker extends Walker_Nav_Menu {
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 
-		$is_parent = $item->bur__is_parent;
-		$is_active = $item->bur__is_active;
+		$is_parent = $item->wgj__is_parent;
+		$is_active = $item->wgj__is_active;
 
 		// Get CSS Classes.
 		if ( $is_parent ) {
@@ -646,9 +646,9 @@ TEMPLATE;
 	public function build_class_string( $item, $depth, $args ) {
 
 		// Passed from display_element.
-		$is_parent  = $item->bur__is_parent;
-		$is_active  = $item->bur__is_active;
-		$has_active = $item->bur__has_active;
+		$is_parent  = $item->wgj__is_parent;
+		$is_active  = $item->wgj__is_active;
+		$has_active = $item->wgj__has_active;
 
 		// BEM Structure.
 		$css_element  = '_item';

@@ -1,30 +1,15 @@
-%input-base {
+%button-base {
+	transition: all var(--wp--custom--transition--hover-time) ease-in-out;
+	border: 0;
 	border-radius: var(--wp--custom--border-radius--large);
-	color: var(--wp--preset--color--wgj-fg);
-	background-color: var(--wp--preset--color--wgj-bg);
-	border: none;
+	box-shadow: none;
 	cursor: pointer;
-
-	&:disabled {
-		cursor: default;
-		pointer-events: none !important;
-		color: #8888;
-	}
-}
-
-
-@mixin button-base {
 	max-width: 100%;
 	overflow: visible;
-	border: 0;
-	box-shadow: none;
-	font-family: inherit;
-	font-weight: 600;
 	text-transform: uppercase;
-	border-radius: var(--wp--custom--border-radius--large);
+	font-family: inherit;
 	font-size: var(--wp--preset--font-size--medium);
-	transition: all var(--wp--custom--transition--hover-time) ease-in-out;
-	cursor: pointer;
+	font-weight: 600;
 
 	&:hover {
 		border-radius: var(--wp--custom--border-radius--small);
@@ -33,22 +18,22 @@
 }
 
 %button {
-	@include button-base;
-	color: var(--wp--preset--color--wgj-fg-alt);
+	@extend %button-base;
 	background: var(--wp--preset--color--wgj-accent);
 	padding-top: calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) );
 	padding-right: calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) );
 	padding-bottom: calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) );
 	padding-left: calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) );
+	color: var(--wp--preset--color--wgj-fg-alt);
 }
 
 %button-outline {
-	@include button-base;
+	@extend %button-base;
 	border: solid var(--wp--custom--border-size);
-	color: currentColor;
 	background: #0000;
 	padding-top: var(--wp--preset--spacing--20);
 	padding-right: var(--wp--preset--spacing--40);
 	padding-bottom: var(--wp--preset--spacing--20);
 	padding-left: var(--wp--preset--spacing--40);
+	color: currentColor;
 }

@@ -8,9 +8,9 @@ namespace BigupWeb\WebGuyJeffTheme;
  */
 class Settings_Tab_Verification {
 
-	public const PAGE   = 'bur_page_verification';
-	public const GROUP  = 'bur_group_verification';
-	public const OPTION = 'bur_settings_verification';
+	public const PAGE   = 'wgj_page_verification';
+	public const GROUP  = 'wgj_group_verification';
+	public const OPTION = 'wgj_settings_verification';
 
 	public $settings;
 

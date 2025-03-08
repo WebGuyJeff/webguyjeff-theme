@@ -46,7 +46,7 @@ class Head_Inject {
 	 * @return array Array of verification name/content pairs.
 	 */
 	private function get_verification_keys() {
-		$option = get_option( 'bur_settings_verification' );
+		$option = get_option( 'wgj_settings_verification' );
 		if ( ! $option ) {
 			return false;
 		}

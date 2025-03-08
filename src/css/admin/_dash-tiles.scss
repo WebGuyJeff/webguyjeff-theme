@@ -12,11 +12,11 @@
 		transition: all .15s;
 		border-radius: 5px;
 		box-shadow: 0px 0px 0.35rem -0.1rem #0008;
-		background-color: var(--bur_white);
+		background-color: var(--wgj_white);
 		padding: 10px;
 		text-align: center;
 		text-decoration: none;
-		color: var(--bur_grey-dark);
+		color: var(--wgj_grey-dark);
 		font-size: 120%;
 		font-weight: 500;
 		transition: box-shadow .2s ease-in-out;
@@ -24,7 +24,7 @@
 		&:hover {
 			box-shadow: 0 0.1rem 0.5rem 0 #000a;
 			text-decoration: underline;
-			color: var(--bur_grey-darkest);
+			color: var(--wgj_grey-darkest);
 		}
 	}
 }
