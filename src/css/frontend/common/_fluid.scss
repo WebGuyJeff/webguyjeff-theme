@@ -5,6 +5,7 @@
  * @see https://websemantics.uk/tools/responsive-font-calculator/
  */
 :root {
-	--wgj--fluid-root: calc(0.9375rem + ((1vw - 4px) * 0.1974));
+	--wgj--fluid-root: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.3472)), 20px);
 	font-size: var( --wgj--fluid-root );
+	min-height: 0vw; // Safari fix.
 }
