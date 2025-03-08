@@ -29,10 +29,10 @@
 
 			// Define underline colours.
 			&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--wgj-accent); }
-			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--wgj-yellow); }
-			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--wgj-green-lightest); }
-			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--wgj-green-light); }
-			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--wgj-green-dark); }
+			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--wgj-green); }
+			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--wgj-blue); }
+			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--wgj-pink); }
+			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--wgj-bg); }
 
 			// Underline colours (exclude sub-menu items).
 			&:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {

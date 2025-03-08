@@ -20,6 +20,9 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+            "custom": true,
+            "customGradient": true,
+            "link": true,
 			"defaultDuotone": false,
 			"defaultPalette": false,
 			"defaultGradients": false,
@@ -62,11 +65,10 @@
 				{ "slug": "wgj-fg","color":"#000","name":"Theme Foreground"},
 				{ "slug": "wgj-bg-alt","color":"#000","name":"Theme Background Alt"},
 				{ "slug": "wgj-fg-alt","color":"#fff","name":"Theme Foreground Alt"},
-				{ "slug": "wgj-accent","color":"#fe6150","name":"Theme Accent"},
-				{ "slug": "wgj-green-light","color":"#0d9066","name":"Theme Green Light"},
-				{ "slug": "wgj-green-lightest","color":"#7ee2a2","name":"Theme Green Lightest"},
-				{ "slug": "wgj-green-dark","color":"#04724f","name":"Theme Green Dark"},
-				{ "slug": "wgj-yellow","color":"#ffb129","name":"Theme Yellow"},
+				{ "slug": "wgj-accent","color":"#ff1e5f","name":"Theme Accent"},
+				{ "slug": "wgj-green","color":"#02ddbb","name":"Theme Green"},
+				{ "slug": "wgj-blue","color":"#00c1fd","name":"Theme Blue"},
+				{ "slug": "wgj-pink","color":"#d814d4","name":"Theme Pink"},
 				{ "slug": "pink-lightest", "color": "hsl(303, 53%, 88%)", "name": "Pink Lightest" },
 				{ "slug": "pink-light", "color": "hsl(303, 53%, 60%)", "name": "Pink Light" },
 				{ "slug": "pink", "color": "hsl(303, 53%, 50%)", "name": "Pink" },
@@ -109,12 +111,11 @@
 				{ "slug": "grey-dark", "color": "hsl(0, 0%, 30%)", "name": "Grey Dark" },
 				{ "slug": "grey-darkest", "color": "hsl(0, 0%, 20%)", "name": "Grey Darkest" },
 				{ "slug": "black", "color": "hsl(0, 0%, 0%)", "name": "Black" }
-			],
-			"link": true
+			]
 		},
 		"typography": {
 			"defaultFontSizes": false,
-			"customFontSize": true,
+            "customFontSize": true,
 			"lineHeight": true,
 			"textColumns": true,
 			"writingMode": true,
