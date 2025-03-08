@@ -1,5 +1,4 @@
 import './_hero.scss'
-import './_page-hero.scss'
 import './_loyalty.scss'
 import './_services-query-loop.scss'
 import './_signup.scss'

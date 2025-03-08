@@ -6,7 +6,7 @@ namespace BigupWeb\WebGuyJeffTheme;
  *
  * @package webguyjeff-theme
  * @author Jefferson Real <jeff@webguyjeff.com>
- * @copyright Copyright 2023 Jefferson Real
+ * @copyright Copyright 2025 Jefferson Real
  */
 
 // Development debugging.

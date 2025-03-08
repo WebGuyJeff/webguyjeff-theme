@@ -1,20 +1,21 @@
 /**
  * WebGuyJeff Slide-Header
  *
- * Handle header slide animation on button click and scroll events.
+ * Handle header slide animation on scroll. Header is also squished thin once below fold. Elements
+ * in the header can update to suit by targeting with the inserted css class.
  *
  * @package webguyjeff-theme
  * @author Jefferson Real <jeff@webguyjeff.com>
- * @copyright Copyright 2023 Jefferson Real
+ * @copyright Copyright 2025 Jefferson Real
  */
 
 const slideHeader = () => {
 
 	let header,
-		lastScrollY    = 0,
-		isAnimating    = false,
-		isThrottled    = false,
-		squishDistance = 50
+		lastScrollY  = 0,
+		isAnimating  = false,
+		isThrottled  = false,
+		squishBuffer = 150 // Help with class add/remove loop error when scroll distance is affected by header squish.
 
 	const init = () => {
 		const target = document.querySelector( '.jsSlideHeader' )
@@ -42,9 +43,9 @@ const slideHeader = () => {
 		const isScrollingDown = ( currentScrollY > lastScrollY ) ? true : false
 		lastScrollY = currentScrollY
 		const isBelowFold  = window.scrollY > window.innerHeight
-		const shouldSquish = window.scrollY > squishDistance
+		const shouldSquish = window.scrollY > squishBuffer
 
-		// Style.
+		// Insert class when squished thin.
 		if ( shouldSquish ) {
 			header.classList.add( 'is-squished' )
 		} else {

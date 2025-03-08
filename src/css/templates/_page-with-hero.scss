@@ -5,7 +5,7 @@
 	}
 }
 
-.page-hero-overlap {
+.page-with-hero-overlap {
 	margin-block-start: -8rem !important;
 	min-height: 9rem !important;
 	z-index: 1;
@@ -44,16 +44,4 @@
 	@media (min-width: 1200px) {
 		height: 70vh !important;
 	}
-
-/*
-	//These begin to push the title belo pagefold.
-
-	@media (min-width: 1500px) {
-		height: 80vh !important;
-	}
-
-	@media (min-width: 1800px) {
-		height: 90vh !important;
-	}
-*/
 }

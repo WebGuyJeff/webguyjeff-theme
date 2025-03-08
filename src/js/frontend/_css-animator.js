@@ -5,7 +5,7 @@
  *
  * @package lonewolf
  * @author Jefferson Real <me@jeffersonreal.uk>
- * @copyright Copyright 2023 Jefferson Real
+ * @copyright Copyright 2025 Jefferson Real
  */
 
 /**
