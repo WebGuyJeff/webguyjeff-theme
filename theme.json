@@ -223,7 +223,7 @@
 		},
 		"shadow": {
 			"presets": [
-				{ "name": "Tight", "slug": "theme-tight", "shadow": "0 0.1rem 0.2em 0 #000, 0 0.2rem 0.3rem 0.1rem #0004" },
+				{ "name": "Tight", "slug": "theme-tight", "shadow": "0 0.08rem 0.1em 0 #000, 0 0.15rem 0.3rem 0.15rem #0004" },
 				{ "name": "Small", "slug": "theme", "shadow": "0 0.25rem 0.5em 0.25rem #0006,0 0.125rem 0.25rem 0.125rem #0006" },
 				{ "name": "Soft", "slug": "theme-soft", "shadow": "0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12)" },
 				{ "name": "Soft Upward", "slug": "theme-soft-up", "shadow": "0 -1px 1px rgba(0,0,0,0.12), 0 -2px 2px rgba(0,0,0,0.12), 0 -4px 4px rgba(0,0,0,0.12), 0 -8px 8px rgba(0,0,0,0.12), 0 -16px 16px rgba(0,0,0,0.12)" },
