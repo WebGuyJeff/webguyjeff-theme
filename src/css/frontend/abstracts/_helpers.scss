@@ -1,4 +1,5 @@
 // Until Gut' enables shadow support in the UI (maybe WP 6.5...).
+.has-shadow-tight { box-shadow: var(--wp--preset--shadow--theme-tight); } 
 .has-shadow-small { box-shadow: var(--wp--preset--shadow--theme); }
 .has-shadow-soft { box-shadow: var(--wp--preset--shadow--theme-soft); }
 .has-shadow-inset { box-shadow: var(--wp--preset--shadow--theme-inset); }

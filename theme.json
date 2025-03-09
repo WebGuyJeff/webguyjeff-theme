@@ -162,17 +162,17 @@
 					]
 				},
 				{
-					"fontFamily": "Wellfleet, 'Rockwell Extra Bold', Palatino, serif",
-					"name": "Wellfleet",
-					"slug": "wellfleet",
+					"fontFamily": "'Metal Mania', Papyrus, fantasy",
+					"name": "Metal Mania",
+					"slug": "metal-mania",
 					"fontFace": [
 						{
-							"fontFamily": "Wellfleet",
+							"fontFamily": "Metal Mania",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/Wellfleet/Wellfleet-Regular.ttf"
+								"file:./assets/fonts/Metal_Mania/MetalMania-Regular.ttf"
 							]
 						}
 					]
@@ -207,12 +207,12 @@
 			"units": [ "em", "rem", "vh", "vw", "%" ],
 			"spacingSizes": [
 				{ "name": "1 (0.5rem)", "slug": "20", "size": "0.5rem" },
-				{ "name": "2 (0.75rem)", "slug": "30", "size": "0.75rem" },
-				{ "name": "3 (1rem)", "slug": "40", "size": "1rem" },
-				{ "name": "4 (2rem)", "slug": "50", "size": "2rem" },
-				{ "name": "5 (3.5rem)", "slug": "60", "size": "3.5rem" },
-				{ "name": "6 (6rem)", "slug": "70", "size": "6rem" },
-				{ "name": "7 (10rem)", "slug": "80", "size": "10rem" }
+				{ "name": "2 (1rem)", "slug": "30", "size": "1rem" },
+				{ "name": "3 (2rem)", "slug": "40", "size": "2rem" },
+				{ "name": "4 (3.5rem)", "slug": "50", "size": "3rem" },
+				{ "name": "5 (6rem)", "slug": "60", "size": "5rem" },
+				{ "name": "6 (0.75rem)", "slug": "70", "size": "8rem" },
+				{ "name": "7 (10rem)", "slug": "80", "size": "12rem" }
 			]
 		},
 		"border": {
@@ -223,6 +223,7 @@
 		},
 		"shadow": {
 			"presets": [
+				{ "name": "Tight", "slug": "theme-tight", "shadow": "0 0.1rem 0.2em 0 #000, 0 0.2rem 0.3rem 0.1rem #0004" },
 				{ "name": "Small", "slug": "theme", "shadow": "0 0.25rem 0.5em 0.25rem #0006,0 0.125rem 0.25rem 0.125rem #0006" },
 				{ "name": "Soft", "slug": "theme-soft", "shadow": "0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12)" },
 				{ "name": "Soft Upward", "slug": "theme-soft-up", "shadow": "0 -1px 1px rgba(0,0,0,0.12), 0 -2px 2px rgba(0,0,0,0.12), 0 -4px 4px rgba(0,0,0,0.12), 0 -8px 8px rgba(0,0,0,0.12), 0 -16px 16px rgba(0,0,0,0.12)" },
@@ -282,10 +283,10 @@
 		"elements": {
 			"button": {
 				"css": "text-align:center;",
-				"border": { "radius": "var(--wp--custom--border-radius--large)", "width": "0" },
+				"border": { "radius": "var(--wp--custom--border-radius--small)", "width": "0" },
 				"color": { "background": "var(--wp--preset--color--lw-accent)", "text": "var(--wp--preset--color--lw-fg-alt)" },
 				"typography": { "textTransform": "uppercase", "fontWeight": "600" },
-				":hover": { "border": { "radius": "var(--wp--custom--border-radius--small)" }, "shadow": "var(--wp--preset--shadow--theme-soft)" }
+				":hover": { "border": { "radius": "var(--wp--custom--border-radius--large)" }, "shadow": "var(--wp--preset--shadow--theme-tight)" }
 			},
 			"link": { "color": { "text": "inherit" } },
 			"heading": {
@@ -305,13 +306,17 @@
 		"blocks": {
 			"core/buttons": { "spacing": { "blockGap": "var(--wp--custom--gutter--small)" } },
 			"core/button": {
+				"typography": {
+					"lineHeight": "1",
+					"fontWeight": "bold"
+				},
 				"css": "transition: border-radius var(--wp--custom--transition--hover-time) ease-in-out, box-shadow var(--wp--custom--transition--hover-time) ease-in-out;",
 				"spacing": {
 					"padding": {
 						"top": "calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) )",
 						"bottom": "calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) )",
-						"left": "calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) )",
-						"right": "calc( var(--wp--preset--spacing--40) + var(--wp--custom--border-size) )"
+						"left": "calc( var(--wp--preset--spacing--30) + var(--wp--custom--border-size) )",
+						"right": "calc( var(--wp--preset--spacing--30) + var(--wp--custom--border-size) )"
 					}
 				},
 				"color": { "background": "var(--wp--preset--color--wgj-accent)", "text": "var(--wp--preset--color--wgj-fg-alt)" },
@@ -323,8 +328,8 @@
 							"padding": {
 								"top": "var(--wp--preset--spacing--20)",
 								"bottom": "var(--wp--preset--spacing--20)",
-								"left": "var(--wp--preset--spacing--40)",
-								"right": "var(--wp--preset--spacing--40)"
+								"left": "var(--wp--preset--spacing--30)",
+								"right": "var(--wp--preset--spacing--30)"
 							}
 						}
 					}

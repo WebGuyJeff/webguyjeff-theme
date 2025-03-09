@@ -27,12 +27,8 @@
 
 		.wp-block-navigation-item {
 
-			// Define underline colours.
-			&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--wgj-accent); }
-			&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--wgj-green); }
-			&:nth-child( 5n+3 ) { --menuColour: var(--wp--preset--color--wgj-blue); }
-			&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--wgj-pink); }
-			&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--wgj-bg); }
+			// Define underline colour.
+			--menuColour: var(--wp--preset--color--wgj-accent);
 
 			// Underline colours (exclude sub-menu items).
 			&:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {
@@ -50,8 +46,8 @@
 					bottom: 0;
 				
 					background-image: 
-					linear-gradient(to right, var(--menuColour), var(--menuColour)),
-					linear-gradient(to right, var(--wp--preset--color--wgj-fg-alt), var(--wp--preset--color--wgj-fg-alt));
+					linear-gradient( to right, var(--menuColour), var(--menuColour) ),
+					linear-gradient( to right, var(--wp--preset--color--wgj-bg), var(--wp--preset--color--wgj-bg) );
 					background-position: 100% 100%, 0 100%;
 					background-repeat: no-repeat;
 					background-size: 100%, 0;
