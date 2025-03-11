@@ -11,6 +11,8 @@
 
 const slideHeader = () => {
 
+	const selector = '.jsSlideHeader'
+
 	let header,
 		lastScrollY  = 0,
 		isAnimating  = false,
@@ -18,7 +20,7 @@ const slideHeader = () => {
 		squishBuffer = 150 // Help with class add/remove loop error when scroll distance is affected by header squish.
 
 	const init = () => {
-		const target = document.querySelector( '.jsSlideHeader' )
+		const target = document.querySelector( selector )
 		if ( ! target ) {
 			return
 		} else {

@@ -1,2 +1,2 @@
-import './_fluid.scss'
+import './_fluid-font-size.scss'
 import './_page.scss'

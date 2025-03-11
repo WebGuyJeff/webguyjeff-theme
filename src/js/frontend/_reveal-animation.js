@@ -6,6 +6,12 @@
 
 const revealAnimation = () => {
 
+	// GSAP should be imported via WP enqueue.
+	if ( typeof( gsap ) !== 'object' || typeof( ScrollTrigger ) === 'undefined' ) {
+		console.warn( 'revealAnimation: Missing GSAP dependencies - animation disabled.' )
+		return
+	}
+
 	gsap.registerPlugin( ScrollTrigger, CSSPlugin )
 
 	const animateFrom = ( el, direction ) => {

@@ -68,49 +68,7 @@
 				{ "slug": "wgj-accent","color":"#ff1e5f","name":"Theme Accent"},
 				{ "slug": "wgj-green","color":"#02ddbb","name":"Theme Green"},
 				{ "slug": "wgj-blue","color":"#00c1fd","name":"Theme Blue"},
-				{ "slug": "wgj-pink","color":"#d814d4","name":"Theme Pink"},
-				{ "slug": "pink-lightest", "color": "hsl(303, 53%, 88%)", "name": "Pink Lightest" },
-				{ "slug": "pink-light", "color": "hsl(303, 53%, 60%)", "name": "Pink Light" },
-				{ "slug": "pink", "color": "hsl(303, 53%, 50%)", "name": "Pink" },
-				{ "slug": "pink-dark", "color": "hsl(303, 53%, 40%)", "name": "Pink Dark" },
-				{ "slug": "pink-darkest", "color": "hsl(302, 53%, 20%)", "name": "Pink Darkest" },
-				{ "slug": "purple-lightest", "color": "hsl(263, 53%, 88%)", "name": "Purple Lightest" },
-				{ "slug": "purple-light", "color": "hsl(264, 53%, 60%)", "name": "Purple Light" },
-				{ "slug": "purple", "color": "hsl(264, 53%, 50%)", "name": "Purple" },
-				{ "slug": "purple-dark", "color": "hsl(264, 53%, 40%)", "name": "Purple Dark" },
-				{ "slug": "purple-darkest", "color": "hsl(263, 53%, 20%)", "name": "Purple Darkest" },
-				{ "slug": "blue-lightest", "color": "hsl(207, 53%, 88%)", "name": "Blue Lightest" },
-				{ "slug": "blue-light", "color": "hsl(207, 53%, 60%)", "name": "Blue Light" },
-				{ "slug": "blue", "color": "hsl(207, 53%, 50%)", "name": "Blue" },
-				{ "slug": "blue-dark", "color": "hsl(207, 53%, 40%)", "name": "Blue Dark" },
-				{ "slug": "blue-darkest", "color": "hsl(207, 53%, 20%)", "name": "Blue Darkest" },
-				{ "slug": "green-lightest", "color": "hsl(136, 53%, 88%)", "name": "Green Lightest" },
-				{ "slug": "green-light", "color": "hsl(136, 53%, 60%)", "name": "Green Light" },
-				{ "slug": "green", "color": "hsl(136, 53%, 50%)", "name": "Green" },
-				{ "slug": "green-dark", "color": "hsl(136, 53%, 40%)", "name": "Green Dark" },
-				{ "slug": "green-darkest", "color": "hsl(136, 53%, 20%)", "name": "Green Darkest" },
-				{ "slug": "yellow-lightest", "color": "hsl(62, 76%, 88%)", "name": "Yellow Lightest" },
-				{ "slug": "yellow-light", "color": "hsl(61, 75%, 60%)", "name": "Yellow Light" },
-				{ "slug": "yellow", "color": "hsl(61, 76%, 50%)", "name": "Yellow" },
-				{ "slug": "yellow-dark", "color": "hsl(61, 75%, 40%)", "name": "Yellow Dark" },
-				{ "slug": "yellow-darkest", "color": "hsl(62, 76%, 20%)", "name": "Yellow Darkest" },
-				{ "slug": "orange-lightest", "color": "hsl(30, 76%, 88%)", "name": "Orange Lightest" },
-				{ "slug": "orange-light", "color": "hsl(30, 75%, 60%)", "name": "Orange Light" },
-				{ "slug": "orange", "color": "hsl(30, 76%, 50%)", "name": "Orange" },
-				{ "slug": "orange-dark", "color": "hsl(30, 75%, 40%)", "name": "Orange Dark" },
-				{ "slug": "orange-darkest", "color": "hsl(30, 76%, 20%)", "name": "Orange Darkest" },
-				{ "slug": "red-lightest", "color": "hsl(0, 76%, 88%)", "name": "Red Lightest" },
-				{ "slug": "red-light", "color": "hsl(0, 75%, 60%)", "name": "Red Light" },
-				{ "slug": "red", "color": "hsl(0, 76%, 50%)", "name": "Red" },
-				{ "slug": "red-dark", "color": "hsl(0, 75%, 40%)", "name": "Red Dark" },
-				{ "slug": "red-darkest", "color": "hsl(0, 76%, 20%)", "name": "Red Darkest" },
-				{ "slug": "white", "color": "hsl(0, 0%, 100%)", "name": "White" },
-				{ "slug": "grey-lightest", "color": "hsl(0, 0%, 93%)", "name": "Grey Lightest" },
-				{ "slug": "grey-light", "color": "hsl(0, 0%, 73%)", "name": "Grey Light" },
-				{ "slug": "grey", "color": "hsl(0, 0%, 50%)", "name": "Grey" },
-				{ "slug": "grey-dark", "color": "hsl(0, 0%, 30%)", "name": "Grey Dark" },
-				{ "slug": "grey-darkest", "color": "hsl(0, 0%, 20%)", "name": "Grey Darkest" },
-				{ "slug": "black", "color": "hsl(0, 0%, 0%)", "name": "Black" }
+				{ "slug": "wgj-pink","color":"#d814d4","name":"Theme Pink"}
 			]
 		},
 		"typography": {
@@ -222,12 +180,15 @@
 			"width": true
 		},
 		"shadow": {
+			"defaultPresets": false,
 			"presets": [
 				{ "name": "Tight", "slug": "theme-tight", "shadow": "0 0.08rem 0.1em 0 #000, 0 0.15rem 0.3rem 0.15rem #0004" },
 				{ "name": "Small", "slug": "theme", "shadow": "0 0.25rem 0.5em 0.25rem #0006,0 0.125rem 0.25rem 0.125rem #0006" },
 				{ "name": "Soft", "slug": "theme-soft", "shadow": "0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12)" },
 				{ "name": "Soft Upward", "slug": "theme-soft-up", "shadow": "0 -1px 1px rgba(0,0,0,0.12), 0 -2px 2px rgba(0,0,0,0.12), 0 -4px 4px rgba(0,0,0,0.12), 0 -8px 8px rgba(0,0,0,0.12), 0 -16px 16px rgba(0,0,0,0.12)" },
-				{ "name": "Inset", "slug": "theme-inset", "shadow": "inset -0.1rem 0.2rem 0.5rem 0.2rem #000c" }
+				{ "name": "Inset", "slug": "theme-inset", "shadow": "inset -0.1rem 0.2rem 0.5rem 0.2rem #000c" },
+				{ "name": "Hard Offset Small", "slug": "hard-offset-small", "shadow": "0.25rem 0.25rem 0 var(--wp--preset--color--wgj-blue)" },
+				{ "name": "Hard Offset Large", "slug": "hard-offset-large", "shadow": "0.5rem 0.5rem 0 var(--wp--preset--color--wgj-blue)" }
 			]
 		},
 		"dimensions": { "minHeight": true },
@@ -248,7 +209,7 @@
 				"large": "2rem"
 			},
 			"padding-page": "var( --wp--custom--gutter--medium )",
-			"transition": { "hover-time": "0.25s" }
+			"transition": { "hover-time": "0.15s" }
 		},
 		"blocks": {
 			"core/group": {
@@ -282,11 +243,7 @@
 		},
 		"elements": {
 			"button": {
-				"css": "text-align:center;",
-				"border": { "radius": "var(--wp--custom--border-radius--small)", "width": "0" },
-				"color": { "background": "var(--wp--preset--color--lw-accent)", "text": "var(--wp--preset--color--lw-fg-alt)" },
-				"typography": { "textTransform": "uppercase", "fontWeight": "600" },
-				":hover": { "border": { "radius": "var(--wp--custom--border-radius--large)" }, "shadow": "var(--wp--preset--shadow--theme-tight)" }
+				"color": { "background": "var(--wp--preset--color--wgj-accent)", "text": "var(--wp--preset--color--wgj-fg-alt)" }
 			},
 			"link": { "color": { "text": "inherit" } },
 			"heading": {
@@ -308,45 +265,21 @@
 			"core/button": {
 				"typography": {
 					"lineHeight": "1",
-					"fontWeight": "bold"
-				},
-				"css": "transition: border-radius var(--wp--custom--transition--hover-time) ease-in-out, box-shadow var(--wp--custom--transition--hover-time) ease-in-out;",
-				"spacing": {
-					"padding": {
-						"top": "calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) )",
-						"bottom": "calc( var(--wp--preset--spacing--20) + var(--wp--custom--border-size) )",
-						"left": "calc( var(--wp--preset--spacing--30) + var(--wp--custom--border-size) )",
-						"right": "calc( var(--wp--preset--spacing--30) + var(--wp--custom--border-size) )"
-					}
+					"fontWeight": "600"
 				},
 				"color": { "background": "var(--wp--preset--color--wgj-accent)", "text": "var(--wp--preset--color--wgj-fg-alt)" },
+				"border": { "radius": "var(--wp--custom--border-radius--small)", "width": "0" },
 				"variations": {
 					"outline": {
 						"color": { "background": "#0000", "text": "currentColor" },
-						"border": { "width": "var(--wp--custom--border-size)", "color": "currentColor" },
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--20)",
-								"bottom": "var(--wp--preset--spacing--20)",
-								"left": "var(--wp--preset--spacing--30)",
-								"right": "var(--wp--preset--spacing--30)"
-							}
-						}
+						"border": { "width": "var(--wp--custom--border-size)", "color": "currentColor" }
 					}
 				}
 			},
 			"core/comment-author-name": { "typography": { "fontSize": "var(--wp--preset--font-size--medium)" } },
 			"core/comment-content": {
 				"border": { "radius": "var(--wp--custom--border-radius--small)" },
-				"color": { "background": "var(--wp--preset--color--wgj-bg-alt)" },
-				"spacing": {
-					"padding": {
-						"top": "var(--wp--preset--spacing--30)",
-						"bottom": "var(--wp--preset--spacing--30)",
-						"left": "var(--wp--preset--spacing--40)",
-						"right": "var(--wp--preset--spacing--40)"
-					}
-				}
+				"color": { "background": "var(--wp--preset--color--wgj-bg-alt)" }
 			},
 			"core/comment-date": {
 				"typography": {

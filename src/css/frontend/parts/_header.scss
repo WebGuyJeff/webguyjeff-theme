@@ -6,16 +6,15 @@
 	transition: all var(--wp--custom--transition--hover-time) ease-in;
 	z-index: 10;
 	width: 100% !important;
-	min-height: 8rem; // Match inner .jsSlideHeader_grid to prevent layout shift on squish.
+	//min-height: 8rem; // Match inner .jsSlideHeader_grid to prevent layout shift on squish.
 	pointer-events: none;
 
 	.logoContainer {
 
 		position: relative;
-		height: 7rem;
-		min-width: 7rem;
-		transition: height var(--wp--custom--transition--hover-time),
-		            min-width var(--wp--custom--transition--hover-time);
+		height: 5rem;
+		max-width: 8rem;
+		transition: height var(--wp--custom--transition--hover-time);
 
 		.logo-large,
 		.logo-small {
@@ -32,10 +31,6 @@
 
 		.logo-large { opacity: 1; }
 		.logo-small { opacity: 0; }
-	}
-
-	nav {
-		text-transform: capitalize;
 	}
 
 	&.is-squished {
@@ -65,55 +60,41 @@
 	.jsSlideHeader_grid {
 		gap: 1rem !important;
 		display: grid !important;
-		grid-template-columns: 12rem 1fr 0px !important;
-		min-height: 8rem;
+		grid-template-columns: 0px 6rem 1fr 0px 0px !important;
 		pointer-events: auto;
 		transition: all var(--wp--custom--transition--hover-time) ease-in;
 
-		// Nav Column.
-		&>*:nth-child(2) {
+		// Nav column.
+		&>*:nth-child(3) {
 			justify-content: flex-end;
 		}
 
-		// CTA / Social Column.
-		&>*:nth-child(3) {
+		// Button column.
+		&>*:nth-child(4) {
+			display: none;
+		}
+
+		// Social column.
+		&>*:nth-child(5) {
 			display: none;
 		}
 
 		@media (min-width: 35rem) {
-			grid-template-columns: 24rem 1fr !important;
+			grid-template-columns: 1fr 6rem minmax(0px, 44rem) 0px 1fr !important;
 		}
 
-		@media (min-width: 75rem) {
-			grid-template-columns: 24rem 1fr 24rem !important;
+		@media (min-width: 70rem) {
+			grid-template-columns: 1fr minmax(0px, 10rem) minmax(0px, 50rem) minmax(0px, 10rem) 1fr !important;
 
-			// Nav Column.
-			&>*:nth-child(2) {
+			// Nav column.
+			&>*:nth-child(3) {
 				justify-content: center;
 			}
 
-			// CTA / Social Column.
-			&>*:nth-child(3) {
+			// Button column.
+			&>*:nth-child(4) {
 				display: flex;
-
-				// Social.
-				.social {
-					display: none;
-				}
 			}
-		}
-
-		@media (min-width: 100rem) {
-
-			// CTA / Social Column.
-			&>*:nth-child(3) {
-
-				// Social.
-				.social {
-					display: flex;
-				}
-			}
-
 		}
 
 		@media (min-width:90rem) {

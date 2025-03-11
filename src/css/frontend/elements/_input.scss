@@ -13,8 +13,7 @@ input:disabled,
 textarea,
 textarea:disabled,
 select {
-	width: 100%;
-	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+	padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
 	font-size: inherit;
 }
 
@@ -31,5 +30,5 @@ textarea {
 input[type='submit'],
 button[type='submit'] {
 
-	@extend %button;
+	//@extend %button;
 }
