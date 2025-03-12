@@ -263,10 +263,6 @@
 		"blocks": {
 			"core/buttons": { "spacing": { "blockGap": "var(--wp--custom--gutter--small)" } },
 			"core/button": {
-				"typography": {
-					"lineHeight": "1",
-					"fontWeight": "600"
-				},
 				"color": { "background": "var(--wp--preset--color--wgj-accent)", "text": "var(--wp--preset--color--wgj-fg-alt)" },
 				"border": { "radius": "var(--wp--custom--border-radius--small)", "width": "0" },
 				"variations": {

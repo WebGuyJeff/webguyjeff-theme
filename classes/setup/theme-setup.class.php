@@ -32,7 +32,7 @@ class Theme_Setup {
 		// Methods in this class.
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_front_end_scripts_and_styles' ), 10, 0 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts_and_styles' ), 10, 0 );
-		add_action( 'enqueue_block_editor_assets', array( $this, 'register_editor_scripts_and_styles' ), 10, 0 );
+		add_action( 'enqueue_block_assets', array( $this, 'register_editor_scripts_and_styles' ), 10, 0 );
 		add_action( 'wp_head', array( $this, 'add_pingback_header' ), 10, 0 );
 		add_action( 'wp_head', array( new Head_Inject(), 'print_head_markup' ), 5, 0 );
 		add_action( 'after_setup_theme', array( $this, 'theme_supports_and_features' ), 10, 0 );
