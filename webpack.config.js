@@ -13,6 +13,7 @@ module.exports = {
 		'css/theme-editor': './src/theme-editor.css.js',
 		'css/theme-dev': './src/theme-dev.css.js',
 		'js/theme': './src/theme.js',
+		'js/theme-editor': './src/theme-editor.js',
 	},
 	plugins: [
 		...wordpressConfig.plugins,

@@ -16,9 +16,10 @@
 		max-width: 8rem;
 		transition: height var(--wp--custom--transition--hover-time);
 
-		.logo-large,
-		.logo-small {
+		.wp-block-site-logo,
+		.wp-block-image {
 			position: absolute;
+			width: max-content;
 			height: 100%;
 			transition: opacity var(--wp--custom--transition--hover-time);
 
@@ -29,8 +30,8 @@
 			}
 		}
 
-		.logo-large { opacity: 1; }
-		.logo-small { opacity: 0; }
+		.wp-block-site-logo { opacity: 1; }
+		.wp-block-image { opacity: 0; }
 	}
 
 	&.is-squished {
@@ -39,8 +40,8 @@
 			height: 3rem;
 			min-width: 3rem;
 
-			.logo-large { opacity: 0; }
-			.logo-small { opacity: 1; }
+			.wp-block-site-logo { opacity: 0; }
+			.wp-block-image { opacity: 1; }
 		}
 
 		.jsSlideHeader_grid {

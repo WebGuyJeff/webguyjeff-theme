@@ -41,10 +41,6 @@ class Theme_Setup {
 
 		add_action( 'init', array( new Patterns(), 'register_categories' ), 10, 0 );
 		add_filter( 'safe_style_css', fn( $styles ) => Escape::get_safe_styles( $styles ), 10, 1 );
-
-		if ( ! has_custom_logo() ) {
-			add_filter( 'get_custom_logo', array( $this, 'set_placeholder_custom_logo' ) );
-		}
 	}
 
 
@@ -80,6 +76,14 @@ class Theme_Setup {
 	 */
 	public function register_editor_scripts_and_styles() {
 		wp_enqueue_style( 'webguyjeff_theme_editor_css', WEBGUYJEFF_URL . 'build/css/theme-editor.css', array(), filemtime( WEBGUYJEFF_PATH . 'build/css/theme-editor.css' ), 'all' );
+		wp_enqueue_script( 'webguyjeff_theme_editor_js', WEBGUYJEFF_URL . 'build/js/theme-editor.js', array(), filemtime( WEBGUYJEFF_PATH . 'build/js/theme-editor.js' ), true );
+		wp_localize_script(
+			'webguyjeff_theme_editor_js',
+			'webguyjeffThemelocalizedEditorVars',
+			array(
+				'templateDirectoryUri' => get_template_directory_uri(),
+			)
+		);
 	}
 
 
@@ -160,18 +164,5 @@ class Theme_Setup {
 		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 		remove_action( 'wp_print_styles', 'print_emoji_styles' );
 		remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
-	}
-
-
-	/**
-	 * Set placeholder custom logo when none is set.
-	 */
-	public static function set_placeholder_custom_logo() {
-		$html = sprintf(
-			'<a href="%s" class="custom-logo-link" rel="home" itemprop="url"><img class="custom-logo" src="%s" alt="%s"></a>',
-			esc_url( home_url( '/' ) ),
-			self::PLACEHOLDER_LOGO_URL,
-			get_bloginfo( 'name' ) . ' logo'
-		);
 	}
 }
